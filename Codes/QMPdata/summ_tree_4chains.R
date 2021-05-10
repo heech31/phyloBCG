@@ -18,6 +18,8 @@ cols <- gg_color_hue(20)
 library(corpcor) #install.packages("corpcor")
 load('~/Dropbox/Research/TAMU/graphical/QMPdata/QMPtree.RData')
 x <- QMP
+
+
 likelihood <- function(z,R){
   np <- dim(z)
   n <- np[1]
@@ -29,11 +31,6 @@ likelihood <- function(z,R){
   log.lik <- sum(log.likes)
   list(log.lik=log.lik, log.likes=log.likes)
 }
-
-## Load MCMC sample of size 30,000
-#load(paste(resultPath,"result.QMPtree30000.RData",sep="") )
-#load(paste(resultPath,"result.QMPtree_1e-3.RData",sep="") )
-load(paste("/Users/heecheolchung/Dropbox/Research/TAMU/graphical/QMPdata/results/result.QMPtree.RData",sep="") )
 
 
 ##################################################################################
@@ -77,9 +74,9 @@ for(ch in 1:nchain){
   T_post_mean[[ch]] <- apply( gibbsSample$U_gibbs[,,thinInd],c(1,2),mean)
   rm(gibbsSample) 
 }
-#matplot(t(lp5[1:4,]),type="l",lty=1)
 
 
+# Color for traceplotß
 tracecol <- c( rgb(0.1,0.1,0.1,0.7), rgb(0.8,0.1,0.1,0.5),
                rgb(0.1,0.8,0.1,0.7), rgb(0.1,0.1,0.8,0.5))
 
@@ -91,32 +88,6 @@ lines( lp5[3,],type="l",lty=1,col=tracecol[3])
 lines( lp5[4,],type="l",lty=1,col=tracecol[4])
 legend("topright",paste("Chain",1:4), lty=1,col=tracecol, lwd=2)
 #dev.off()
-
-# For chain 3
-# gibbsSample <- readRDS( paste(resultsPath,paste("result.QMPchain_",3,".rds",sep=""), sep="" ) )
-#sig2_gibbs <- gibbsSample$sig2_gibbs
-#pi_gibbs <- gibbsSample$pi_gibbs
-#C_gibbs <- gibbsSample$C_gibbs
-
-
-
-
-
-## sigma^2 has high autocorrelation but 
-## it is not a parameter of main interest
-plot.new()
-par(mfrow=c(1,3))
-hist(sig2_gibbs,50)
-acf( sig2_gibbs )
-plot(sig2_gibbs,type="l",lwd=0.5)
-## Posterior histogram of sig2
-mean(sig2_gibbs)
-df <- data.frame(s2gibbs=sig2_gibbs)
-
-s2hist <- ggplot(df, aes(x=s2gibbs)) + 
-    geom_histogram(aes(y=..density..), bins=50, colour="black", fill="white") + 
-    geom_density(alpha=.2, fill="#FF6666") 
-
 
 
 
@@ -183,17 +154,10 @@ V(grph)$label.dist <- rep(1.2,54)
 V(grph)$edge.color <- "grey"
 
 layout_kk <- layout_with_kk(grph)
-#which(colnames(x)=="Paraprevotella")
-#which(colnames(x)=="Methanosphaera")
-#which(colnames(x)=="Fusobacterium")
-
-# layout_kk[which(colnames(x)=="Methanosphaera"),]
-# layout_kk[which(colnames(x)=="Methanosphaera"),1] = -1
-# layout_kk[which(colnames(x)=="Paraprevotella"),]
-# layout_kk[which(colnames(x)=="Paraprevotella"),1] = -1.3
 
 
 layout_kk[,2] <- -layout_kk[,2]
+
 ## Community memberships in phylogenetic tree
 cols <- membership(ceb)
 cols[ match( ceb[[1]] , qmptree$tip.label ) ] <- "black"
@@ -303,26 +267,6 @@ latent.positions
 
 
 
-
-
-### 3-means
-threemans <- kmeans(tmp,3)
-post.position <-  ggplot(tmp,aes(x=x1, y=x2,fill=factor(threemans[[1]]) ) ) + stat_ellipse() 
-latent.positions <- post.position +
-  geom_point(aes(x=x1,y=x2), color=cols, shape=shapes, size=3) +
-  ylim(lower=-4,upper=5.0) + xlim(lower=-5,upper=5.5) +
-  geom_label_repel(aes(x=x1,y=x2,label=colnames(x) ), size=3, 
-                   nudge_y = nudge_y,  nudge_x = nudge_x, 
-                   arrow = arrow(length = unit(0.01, "npc")),
-                   box.padding = 0.01, point.padding = 0.2, label.size=0.2, 
-                   segment.color=rep("grey50",p), 
-                   max.time=50, alpha=0.5, max.overlaps = 100) +
-  xlab("") + ylab("") +
-  ggtitle("Posterior mean latent positions")  +
-  theme( plot.title = element_text(hjust = 0.5) )
-latent.positions 
-
-
 ###########################################################################
 ############### Draw heatmap of posterior partial correlation matrix
 ###########################################################################
@@ -391,21 +335,6 @@ tile.pc.hat
 #ggsave(paste(figPath,"parCor.tree_1e-3.pdf",sep=""),tile.pc.hat, width=12,height=9)
 
 
-# All model finds
-parCor["Catenibacterium","Peptococcus"]
-parCor["Dialister","Phascolarctobacterium"]
-parCor["Veillonella","Haemophilus"]
-
-
-parCor["Eubacterium","Peptococcus"]
-parCor["Dialister","Streptococcus"]
-parCor["Enterococcus","Veillonella"]
-
-parCor["Methanobrevibacter","Akkermansia"]
-parCor["Dorea","Akkermansia"]
-parCor["Ruminococcus","Akkermansia"]
-parCor["Ruminococcus","Dorea"]
-parCor["Fusobacterium","Megamonas"]
 
 ###########################################################################
 ############### Draw heatmap of posterior edge inclusion probability
@@ -509,17 +438,7 @@ tile.S.hat <- tile.S.hat + scale_alpha_continuous(guide=FALSE) +  scale_size_con
 tile.S.hat <- tile.S.hat + geom_segment(aes(x=0.5, y=(p+0.5), xend = (p+0.5), yend=0.5), color="grey", size = 0.5)
 tile.S.hat
 
-Sighat[,"Prevotella"]
 
 
-hist(gibbsSample$R_gibbs[2,5,],30)
-
-#ggsave(paste(figPath,"post.S.tree.pdf",sep=""),tile.S.hat, width=12,height=9)
-
-
-#ggsave(paste(figPath,"tree.pi.parCor.pdf",sep=""), grid.arrange(tile.pi.hat,tile.pc.hat, ncol=2), width=18,height=9)
-
-
-#save(parCor, file = paste(resultPath,"pcor.tree_1e-3.RData",sep=""))
 
 
