@@ -4,7 +4,7 @@ README
 
 
 
-This folder contains R codes which reproduce the simulation and real data analysis results in the paper "Phylogenetically informed Bayesian truncated copula graphical models for microbial association networks" by Hee Cheol Chung, Irina Gaynanova and Yang Ni.
+This folder contains R codes that produce the simulation and real data analysis results presented in the paper "Phylogenetically informed Bayesian truncated copula graphical models for microbial association networks" by Hee Cheol Chung, Irina Gaynanova and Yang Ni.
 
 1. functions/AlbertChib_mrg.R: 
 
@@ -26,15 +26,11 @@ This folder contains R codes which reproduce the simulation and real data analys
 
 The following directories need to exist and accessible by "Main codes":
 
-For the real data, one need to have folders named as ./RT_LDA_realData/"dataNames". For example, ./RT_LDA_realData/diab. Data names are listed in RealData/dataNames.csv.
-The results (test error rates and basis of discriminant subspaces) will be saved to "resultpath". The "resultpath" is specified in the "Main codes." Please change the path accordingly.
-
-For the simulated data sets, one need to have folders named as ./RT_LDA_simData/"n**s**". For example, ./RT_LDA_simData/n90s50, where n is the sample size and s is the number of variables that are relevant to classification. See Section 3.1 for more details.
 
 
 To run :
-1. Generate data using GenCVindex.m and GenData.m.
-2. Generate Matlab codes and shell scripts using codeGen.sh
-3. Submit **_sub.sh files to accessible HPC cluster.
+1. Generate data by running 
+2. Generate R codes and shell scripts using codeGen.sh
+3. Submit **_sub.sh files to accessible LSF cluster.
 
 
