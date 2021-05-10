@@ -1,5 +1,5 @@
 ################################################################################ 
-## Gibbs sampler for terminal nodes using Albert-Chip data augmentation       ##
+## Gibbs sampler for the tree scale parameter (gamma) of Dist model           ##
 ## Author: Hee Cheol Chung                                                    ##
 ## Data: 08/08/2020                                                           ## 
 ################################################################################

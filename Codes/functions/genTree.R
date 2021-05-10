@@ -10,8 +10,8 @@ library(Matrix)
 
 
 ## Random tree generation for simulation study. 
-## a random tree, inclusion probability and graph
-## where the distance to the root of the terminal nodes are equivalent
+##
+
 
 genTree <- function(p, K=2, cscale){
 	
@@ -25,10 +25,10 @@ genTree <- function(p, K=2, cscale){
 	mytree$edge.length <- cscale*
 				mytree$edge.length/max( nodeHeights(mytree)[,2] )
 
-	## Most common ancestors and node heights
+  ## Most recent common ancestors and node heights
   ## Save branch length
 	nodes.heights <- cbind( mytree$edge[,2], nodeHeights(mytree)[,2] )
-  ## Save least common ancestors
+  ## Save most recent common ancestors
 	lcas  <- mrca(mytree,full=TRUE) 
 
 	H    <- lcas*0 # covariance matrix of tree nodes
@@ -46,7 +46,7 @@ genTree <- function(p, K=2, cscale){
 		}
 
 
-	## Remove the initial node (Root) which will have 0 variance
+	## Remove the initial node (Root) which has zero variance
 	initialNode <- which( colSums( H!=0 ) == 0 )
 
 	H <- H[-initialNode,-initialNode]

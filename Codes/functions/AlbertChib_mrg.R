@@ -1,5 +1,5 @@
 ################################################################################ 
-## Gibbs sampler for terminal nodes using Albert-Chip data augmentation       ##
+## Gibbs sampler for the latent positions using Albert-Chip data augmentation ##
 ## Author: Hee Cheol Chung                                                    ##
 ## Date: 08/08/2020                                                           ##
 ## Update: 03/30/2020                                                         ##
