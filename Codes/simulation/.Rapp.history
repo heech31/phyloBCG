@@ -1,0 +1,2175 @@
+?text
+text(div1,0,label=expression(s[1]),col=2,cex=1.5,adj=0.5)
+plot(c(0,div1),c(0,0),type="l", xlim=c(0,l),axes=FALSE,xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", xlim=c(0,l))#
+#
+points(div1,0,pch=,col=2,cex=5)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,0,label=expression(s[1]),col=2,cex=1.5,adj=0.5)
+points(div1,0,pch=19,col=2,cex=5)
+text(div1,0,label=expression(s[1]),col=2,cex=1.5,adj=0.5)
+text(div1,0,label=expression(s[1]),col=3,cex=1.5,adj=0.5)
+text(div1,0,label=expression(s[1]),col="white",cex=1.5,adj=0.5)
+points(div1,0,pch=15,col=2,cex=5)
+points(div1,0,pch=15,col=2,cex=5)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,0,label=expression(s[1]),col="white",cex=1.5,adj=0.5)
+points(div1,0,pch=15,col=2,cex=5)#
+points(div2,0.5,pch=15,col=3,cex=2)#
+points(div3,-0.5,pch=15,col=4,cex=2)
+points(div1,0,pch=15,col=2,cex=5)#
+points(div2,0.5,pch=15,col=3,cex=5)#
+points(div3,-0.5,pch=15,col=4,cex=5)
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)
+plot(c(0,div1),c(0,0),type="l", xlim=c(0,l),axes=FALSE,xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", xlim=c(0,l))#
+#
+points(div1,0,pch=15,col=2,cex=5)#
+points(div2,0.5,pch=15,col=3,cex=5)#
+points(div3,-0.5,pch=15,col=4,cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)
+plot(c(0,div1), c(0,0), type="l", xlim=c(0,l), lwd=1.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")
+plot(c(0,div1), c(0,0), type="l", lwd=1.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")
+plot(c(0,div1), c(0,0), type="l", lwd=1.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)
+points(div1,0,pch=15,col=2,cex=5)#
+points(div2,0.5,pch=15,col=3,cex=5)#
+points(div3,-0.5,pch=15,col=4,cex=5)
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-3,3), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=3)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)
+par(mfrow=c(1,2))#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-3,3), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=3)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)#
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1,0,pch=15,col=2,cex=5)#
+points(div2,0.5,pch=15,col=3,cex=5)#
+points(div3,-0.5,pch=15,col=4,cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)
+par(mfrow=c(1,2), mar=c(4,4,4,5))#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-3,3), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=3)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)
+par(mfrow=c(1,2), mar=c(4,4,4,10))#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-3,3), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=3)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)
+par(mfrow=c(1,2), mar=c(4,4,4,2))#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-3,3), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=3)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)
+par(mfrow=c(1,2), mar=c(4,4,4,2), oma=c(2,2,2,2))
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-3,3), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=3)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)
+par(mfrow=c(1,2), mar=c(4,4,4,2), oma=c(2,2,2,2),xph=TRUE)
+par(mfrow=c(1,2), mar=c(4,4,4,2), oma=c(2,2,2,2),xpd=TRUE)
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-3,3), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=3)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1,0,pch=15,col=2,cex=5)#
+points(div2,0.5,pch=15,col=3,cex=5)#
+points(div3,-0.5,pch=15,col=4,cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)#
+text(l, 0.25, label=expression(t[2]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.25, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.75, label=expression(t[3]), col="white", cex=1.5, adj=0.5)
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)#
+text(l, 0.25, label=expression(t[2]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.25, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.75, label=expression(t[3]), col="white", cex=1.5, adj=0.5)
+par(mfrow=c(1,2), mar=c(4,4,4,2), oma=c(2,2,2,2),xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-3,3), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=3)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)#
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)#
+text(l, 0.25, label=expression(t[2]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.25, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.75, label=expression(t[3]), col="white", cex=1.5, adj=0.5)
+par(mfrow=c(1,2), mar=c(4,4,4,2), oma=c(1,1,1,1),xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-3,3), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=3)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)#
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)#
+text(l, 0.25, label=expression(t[2]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.25, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.75, label=expression(t[3]), col="white", cex=1.5, adj=0.5)
+par(mfrow=c(1,2), mar=c(4,4,4,1), oma=c(1,1,1,1),xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-3,3), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=3)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)#
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)#
+text(l, 0.25, label=expression(t[2]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.25, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.75, label=expression(t[3]), col="white", cex=1.5, adj=0.5)
+par(mfrow=c(1,2), mar=c(4,2,4,2), oma=c(1,1,1,1),xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-3,3), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=3)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)#
+text(l, 0.25, label=expression(t[2]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.25, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.75, label=expression(t[3]), col="white", cex=1.5, adj=0.5)
+text(l, 0.75, label=expression(italic('t')[1]), col="white", cex=1.5, adj=0.5)
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(italic('t')[1]), col="white", cex=1.5, adj=0.5)
+text(l, 0.25, label=expression(t[2]), col="white", cex=1.5, adj=0.5)
+italic('t')
+text(l, 0.75, label=expression(slant('t')[1]), col="white", cex=1.5, adj=0.5)
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(slant('t')[1]), col="white", cex=1.5, adj=0.5)
+text(l, 0.75, label=expression(italic('t')[1]), col="white", cex=1.5, adj=0.5)
+text(l, 0.75, label=expression(italic("t")[1]), col="white", cex=1.5, adj=0.5)
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(italic("t")[1]), col="white", cex=1.5, adj=0.5)
+text(l, 0.75, label=expression(italic("tasf")[1]), col="white", cex=1.5, adj=0.5)
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(italic("tasf")[1]), col="white", cex=1.5, adj=0.5)
+text(l, 0.75, label=expression(italic("tasf") [1]), col="white", cex=1.5, adj=0.5)
+?text
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, font="serif")
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, family="serif")
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, family="serif")
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, family="Italic")
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, family="Italic")
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, family="sans")
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, family="sans")
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, family="symbol")
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, family="mono")
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, family="mono")
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, family="serif")
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, family="symbol")
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, family="HersheySerif")
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, family="HersheySerif",font=3)
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, font=list(face="italic"))
+?text
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, vfont=list(face="italic"))
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, vfont=list(face=3))
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, font=list(face=3))
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, font=3)
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, font=3)
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, font=3)
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, font=list(face="italic"))
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, font=list(face=3))
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, font=3)
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, font=3)
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, font=1)
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, font=2)
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, font=3)
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, font=4)
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, family="A")
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, family="B")
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, family="B")
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, family="serif", font=list(face=1))
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, family="serif", font=1)
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, family="serif", font=2)
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, family="serif", font=2)
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, family="serif", font=3)
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5, family="serif", font=5)
+par(mfrow=c(1,2), family="serif", mar=c(4,2,4,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-3,3), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=3)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)
+quartzFonts
+?quartzFonts
+quartzFonts("serif")
+par(mfrow=c(1,2), family=quartzFonts("serif")[3], mar=c(4,2,4,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-3,3), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=3)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)
+warnings()
+quartzFonts("serif")
+par(mfrow=c(1,2), mar=c(4,2,4,2), oma=c(1,1,1,1), xpd=TRUE)
+par(mfrow=c(1,2), mar=c(4,2,4,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-3,3), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)
+sigsq = 3#
+l=500#
+#
+x1 = rep(0,l)#
+x2 = rep(0,l)#
+x3 = rep(0,l)#
+x4 = rep(0,l)#
+#
+div1 = round( l*(0.25))#
+div2 = round( l*(0.60))#
+div3 = round( l*(0.82))#
+#
+set.seed(12346)#
+#
+for( ii in 2:l){#
+	x1[ii] = x1[ii-1] + rnorm(1,0,sqrt(sigsq/l) )#
+}#
+#
+x2[1:div1] = x1[1:div1]#
+#
+for( ii in (div1+1):l){#
+	x2[ii] = x2[ii-1] +  rnorm(1,0,sqrt(sigsq/l) )#
+}#
+#
+for( ii in (div1+1):l){#
+	x2[ii] = x2[ii-1] +  rnorm(1,0,sqrt(sigsq/l) )#
+}#
+#
+x3[1:div2] = x1[1:div2]#
+x4[1:div3] = x2[1:div3]#
+#
+for( ii in (div2+1):l){#
+	x3[ii] = x3[ii-1] +  rnorm(1,0,sqrt(sigsq/l) )#
+}#
+#
+for( ii in (div3+1):l){#
+	x4[ii] = x4[ii-1] +  rnorm(1,0,sqrt(sigsq/l) )#
+}#
+par(mfrow=c(1,2), mar=c(4,2,4,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-3,3), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=3)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)#
+text(l, 0.25, label=expression(t[2]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.25, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.75, label=expression(t[3]), col="white", cex=1.5, adj=0.5)
+sigsq = 3#
+l=500#
+#
+x1 = rep(0,l)#
+x2 = rep(0,l)#
+x3 = rep(0,l)#
+x4 = rep(0,l)#
+#
+div1 = round( l*(0.20))#
+div2 = round( l*(0.55))#
+div3 = round( l*(0.85))#
+#
+set.seed(12346)#
+#
+for( ii in 2:l){#
+	x1[ii] = x1[ii-1] + rnorm(1,0,sqrt(sigsq/l) )#
+}#
+#
+x2[1:div1] = x1[1:div1]#
+#
+for( ii in (div1+1):l){#
+	x2[ii] = x2[ii-1] +  rnorm(1,0,sqrt(sigsq/l) )#
+}#
+#
+for( ii in (div1+1):l){#
+	x2[ii] = x2[ii-1] +  rnorm(1,0,sqrt(sigsq/l) )#
+}#
+#
+x3[1:div2] = x1[1:div2]#
+x4[1:div3] = x2[1:div3]#
+#
+for( ii in (div2+1):l){#
+	x3[ii] = x3[ii-1] +  rnorm(1,0,sqrt(sigsq/l) )#
+}#
+#
+for( ii in (div3+1):l){#
+	x4[ii] = x4[ii-1] +  rnorm(1,0,sqrt(sigsq/l) )#
+}#
+par(mfrow=c(1,2), mar=c(4,2,4,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-3,3), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=3)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)
+set.seed(12345)#
+#
+for( ii in 2:l){#
+	x1[ii] = x1[ii-1] + rnorm(1,0,sqrt(sigsq/l) )#
+}#
+#
+x2[1:div1] = x1[1:div1]#
+#
+for( ii in (div1+1):l){#
+	x2[ii] = x2[ii-1] +  rnorm(1,0,sqrt(sigsq/l) )#
+}#
+#
+for( ii in (div1+1):l){#
+	x2[ii] = x2[ii-1] +  rnorm(1,0,sqrt(sigsq/l) )#
+}#
+#
+x3[1:div2] = x1[1:div2]#
+x4[1:div3] = x2[1:div3]#
+#
+for( ii in (div2+1):l){#
+	x3[ii] = x3[ii-1] +  rnorm(1,0,sqrt(sigsq/l) )#
+}#
+#
+for( ii in (div3+1):l){#
+	x4[ii] = x4[ii-1] +  rnorm(1,0,sqrt(sigsq/l) )#
+}#
+par(mfrow=c(1,2), mar=c(4,2,4,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-3,3), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=3)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)
+par(mfrow=c(1,2), mar=c(4,2,4,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,3.5), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=3)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)
+par(mfrow=c(1,2), mar=c(4,2,4,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=3)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)#
+text(l, 0.25, label=expression(t[2]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.25, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.75, label=expression(t[3]), col="white", cex=1.5, adj=0.5)
+?expression
+par(mfrow=c(1,2), mar=c(4,2,4,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=3)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)
+text(div1,x2[div1],label=expression(s[1]),col="deepskyblue2",cex=1.5,pos=3)
+points(div1,x2[div1],pch=20,col="deepskyblue2",cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=3)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)
+points(div1,x2[div1],pch=20,col="darkgrey",cex=2)
+points(div1,x2[div1],pch=1,col="darkgrey",cex=2)
+par(mfrow=c(1,2), mar=c(4,2,4,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+#
+points(div1,x2[div1],pch=1,col="darkgrey",cex=2)
+points(div1,x2[div1],pch=1,col="black",cex=2)
+par(mfrow=c(1,2), mar=c(4,2,4,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+#
+points(div1,x2[div1],pch=1,col="black",cex=2)
+points(div1,x2[div1],pch=2,col="black",cex=2)
+points(div1,x2[div1],pch=3,col="black",cex=2)
+points(div1,x2[div1],pch=4,col="black",cex=2)
+points(div1,x2[div1],pch=4,col="black",lwd=2)
+par(mfrow=c(1,2), mar=c(4,2,4,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+#
+points(div1,x2[div1],pch=4,col="black",lwd=2)
+points(div1,x2[div1],pch=18,col="black",lwd=2)
+points(div1,x2[div1],pch=19,col="black",lwd=2)
+points(div1,x2[div1],pch=20,col="black",lwd=2)
+points(div1,x2[div1],pch=21,col="black",cex=2)
+points(div1,x2[div1],pch=22,col="black",cex=2)
+points(div1,x2[div1],pch=18,col="black",cex=2)
+par(mfrow=c(1,2), mar=c(4,2,4,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+#
+points(div1,x2[div1],pch=18,col="black",cex=2)
+points(div1,x2[div1],pch=18,col="cyan",cex=2)
+points(div1,x2[div1],pch=18,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=3)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)
+par(mfrow=c(1,2), mar=c(4,2,4,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=3)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)
+par(mfrow=c(1,2), mar=c(4,2,4,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=3)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)#
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)
+par(mfrow=c(1,2), mar=c(4,2,4,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=3)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)#
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)#
+text(l, 0.25, label=expression(t[2]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.25, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.75, label=expression(t[3]), col="white", cex=1.5, adj=0.5)
+par(mfrow=c(1,2), mar=c(4,2,4,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=3)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=2)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)
+par(mfrow=c(1,2), mar=c(4,2,4,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=2)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)
+par(mfrow=c(1,2), mar=c(4,2,4,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=2,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=3,cex=1.5,pos=1)#
+text(div3,x4[div3],label=expression(s[3]),col=4,cex=1.5,pos=1)
+par(mfrow=c(1,2), mar=c(4,2,4,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=1,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=1,cex=1.5,pos=1)#
+text(div3,x4[div3],label=expression(s[3]),col=1,cex=1.5,pos=1)
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)#
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)#
+text(l, 0.25, label=expression(t[2]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.25, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.75, label=expression(t[3]), col="white", cex=1.5, adj=0.5)
+setwd("/Users/heecheolchung/Dropbox/Research/TAMU/graphical/Codes")
+pdf("diffusiontree.pdf",width=8,height=4)#
+dev.off()
+dev.off()
+pdf("diffusiontree.pdf",width=8,height=4)#
+par(mfrow=c(1,2), mar=c(4,2,4,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=1,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=1,cex=1.5,pos=1)#
+text(div3,x4[div3],label=expression(s[3]),col=1,cex=1.5,pos=1)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)#
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)#
+text(l, 0.25, label=expression(t[2]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.25, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.75, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+dev.off()
+pdf("diffusiontree.pdf",width=10,height=5)#
+par(mfrow=c(1,2), mar=c(4,2,4,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=1,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=1,cex=1.5,pos=1)#
+text(div3,x4[div3],label=expression(s[3]),col=1,cex=1.5,pos=1)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)#
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)#
+text(l, 0.25, label=expression(t[2]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.25, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.75, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+dev.off()
+pdf("diffusiontree.pdf",width=10,height=5)#
+par(mfrow=c(1,2), mar=c(4,2,3,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=1,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=1,cex=1.5,pos=1)#
+text(div3,x4[div3],label=expression(s[3]),col=1,cex=1.5,pos=1)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)#
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)#
+text(l, 0.25, label=expression(t[2]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.25, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.75, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+dev.off()
+pdf("diffusiontree.pdf",width=10,height=5)#
+par(mfrow=c(1,2), mar=c(4,2,2,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=1,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=1,cex=1.5,pos=1)#
+text(div3,x4[div3],label=expression(s[3]),col=1,cex=1.5,pos=1)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)#
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="s",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)#
+text(l, 0.25, label=expression(t[2]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.25, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.75, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+dev.off()
+pdf("diffusiontree.pdf",width=10,height=4)#
+par(mfrow=c(1,2), mar=c(4,2,2,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=1,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=1,cex=1.5,pos=1)#
+text(div3,x4[div3],label=expression(s[3]),col=1,cex=1.5,pos=1)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)#
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="s",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)#
+text(l, 0.25, label=expression(t[2]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.25, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.75, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+dev.off()
+pdf("diffusiontree.pdf",width=10,height=4)#
+par(mfrow=c(1,2), mar=c(4,2,1,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,x2[div1],label=expression(s[1]),col=1,cex=1.5,pos=3)#
+text(div2,x3[div2],label=expression(s[2]),col=1,cex=1.5,pos=1)#
+text(div3,x4[div3],label=expression(s[3]),col=1,cex=1.5,pos=1)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)#
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="s",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(s[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(s[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(s[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)#
+text(l, 0.25, label=expression(t[2]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.25, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.75, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+dev.off()
+par(mfrow=c(1,2), mar=c(4,2,1,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,paste(expression(s[1]),div1),div2,div3,l)/l)
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,paste(expression(s[1]),div1/l),div2,div3,l) )
+paste(expression(s[1]),div1/l)
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,paste(expression(s[1]),"=",div1/l),div2,div3,l) )
+par(mfrow=c(1,2), mar=c(4,2,1,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,paste(expression(s[1]),"=",div1/l),div2,div3,l) )
+paste(expression(s[1])
+paste(expression(s[1]),"=",div1/l)
+paste(expression(s[1]),"=",div1/l)
+axis(1,at=c(div1), label=c(paste(expression(s[1]),"=",div1/l)) )
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,expression(paste(s[1]),"=",div1/l),div2,div3,l) )
+expression(paste(s[1]),"=",div1/l)
+c(0,expression(paste(s[1]),"=",div1/l),div2,div3,l)
+c(0,expression(paste(s[1]),"=",div1/l),div2,div3,l)
+c(0,expression(paste(s[1],"=",div1/l),div2,div3,l)
+c(0,expression(paste(s[1],"=",div1/l),div2,div3,l) )
+expression(paste(s[1],"=",div1/l)
+c(0,expression(paste(s[1],"=",div1/l)),div2,div3,l)
+expression(paste(s[1],"=",div1/l))
+div2
+div3
+l
+0
+c(0,expression(paste(s[1],"=",div1/l)),div2,div3,l)
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,expression(paste(s[1],"=",div1/l)),div2,div3,l)  )
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,expression(paste(s[1],"=",div1/l)),div2,div3,l)  )
+par(mfrow=c(1,2), mar=c(4,2,1,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,expression(paste(s[1],"=",div1/l)),div2,div3,l)  )
+bquote( s[1] ~ "=",div1/l))
+bquote( s[1] ~ = ~ .(div1/l))
+bquote( s[1] ~ = ~ .(div1/l))
+bquote( s[1] =  .(div1/l))
+bquote( s[1] "="  .(div1/l))
+bquote( s[1]~"="  .(div1/l))
+bquote( s[1]~"="  .(div1) )
+bquote( s[1]~"="~.(div1) )
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,bquote( s[1]~"="~.(div1) ),div2,div3,l)  )
+par(mfrow=c(1,2), mar=c(4,2,1,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,bquote( s[1]~"="~.(div1) ),div2,div3,l)  )
+axis(1,at=c(0,div1,div2,div3,l), label=rep(bquote( s[1]~"="~.(div1) ),5)  )
+rep(bquote( s[1]~"="~.(div1) ),5)
+axis(1,at=c(0,div1,div2,div3,l), label=(bquote( s[1]~"="~.(div1))  )
+axis(1,at=c(0,div1,div2,div3,l), label=bquote( s[1]~"="~.(div1))  )
+axis(1,at=c(0,div1,div2,div3,l), label=bquote( s[1]~"="~.(div1))  )
+axis(1,at=1, label=bquote( s[1]~"="~.(div1))  )
+par(mfrow=c(1,2), mar=c(4,2,1,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=1, label=bquote( s[1]~"="~.(div1))  )
+bquote( s[1]~"="~.(div1))
+c(bquote( s[1]~"="~.(div1)),bquote( s[1]~"="~.(div1)))
+axis(1,at=c(100,200), label=c(bquote( s[1]~"="~.(div1)),bquote( s[1]~"="~.(div1))) )
+par(mfrow=c(1,2), mar=c(4,2,1,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(100,200), label=c(bquote( s[1]~"="~.(div1)),bquote( s[1]~"="~.(div1))) )
+par(mfrow=c(1,2), mar=c(4,2,1,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=bquote( s[1]~"="~.(div1))  )#
+axis(2)
+par(mfrow=c(1,2), mar=c(4,2,1,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)
+text(div1,-2,label=expression(s[1]),col=1,cex=1.5,pos=3)#
+text(div2,-2,label=expression(s[2]),col=1,cex=1.5,pos=1)#
+text(div3,-2,label=expression(s[3]),col=1,cex=1.5,pos=1)
+div1
+div2
+div3
+text(div1,-2,label=expression(s[1]),col=1,cex=1.5,adj=0.5)#
+text(div2,-2,label=expression(s[2]),col=1,cex=1.5,adj=0.5)#
+text(div3,-2,label=expression(s[3]),col=1,cex=1.5,adj=0.5)
+par(mfrow=c(1,2), mar=c(4,2,1,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,-2,label=expression(s[1]),col=1,cex=1.5,adj=0.5)#
+text(div2,-2,label=expression(s[2]),col=1,cex=1.5,adj=0.5)#
+text(div3,-2,label=expression(s[3]),col=1,cex=1.5,adj=0.5)
+text(div1,-2,label=expression(s[1]),col=1,cex=1.5,adj=0.5)#
+text(div2,-2,label=expression(s[2]),col=1,cex=1.5,adj=0.5)#
+text(div3,-2,label=expression(s[3]),col=1,cex=1.5,adj=0.5)
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="s",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)
+text(div1,   0, label=expression(i[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(i[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(i[3]), col="white", cex=1.5, adj=0.5)
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)#
+text(l, 0.25, label=expression(t[2]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.25, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.75, label=expression(t[3]), col="white", cex=1.5, adj=0.5)
+par(mfrow=c(1,2), mar=c(4,2,1,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,-2,label=expression(s[1]),col=1,cex=1.3,adj=0.5)#
+text(div2,-2,label=expression(s[2]),col=1,cex=1.3,adj=0.5)#
+text(div3,-2,label=expression(s[3]),col=1,cex=1.3,adj=0.5)
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)#
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="s",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(i[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(i[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(i[3]), col="white", cex=1.5, adj=0.5)
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)#
+text(l, 0.25, label=expression(t[2]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.25, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.75, label=expression(t[3]), col="white", cex=1.5, adj=0.5)
+axis(2)
+text(div1,-1,label=expression(s[1]),col=1,cex=1.3,adj=0.5)#
+text(div2,-1,label=expression(s[2]),col=1,cex=1.3,adj=0.5)#
+text(div3,-1,label=expression(s[3]),col=1,cex=1.3,adj=0.5)
+pdf("diffusiontree.pdf",width=10,height=4)#
+par(mfrow=c(1,2), mar=c(4,2,1,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,-2,label=expression(s[1]),col=1,cex=1.3,adj=0.5)#
+text(div2,-2,label=expression(s[2]),col=1,cex=1.3,adj=0.5)#
+text(div3,-2,label=expression(s[3]),col=1,cex=1.3,adj=0.5)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)#
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="s",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(i[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(i[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(i[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)#
+text(l, 0.25, label=expression(t[2]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.25, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.75, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+#
+text(div1,-1,label=expression(s[1]),col=1,cex=1.3,adj=0.5)#
+text(div2,-1,label=expression(s[2]),col=1,cex=1.3,adj=0.5)#
+text(div3,-1,label=expression(s[3]),col=1,cex=1.3,adj=0.5)#
+dev.off()
+dev.off()
+pdf("diffusiontree.pdf",width=10,height=4)#
+par(mfrow=c(1,2), mar=c(4,2,1,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,-2,label=expression(s[1]),col=1,cex=1.3,adj=0.5)#
+text(div2,-2,label=expression(s[2]),col=1,cex=1.3,adj=0.5)#
+text(div3,-2,label=expression(s[3]),col=1,cex=1.3,adj=0.5)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)#
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="s",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=5)#
+points(div2, 0.5, pch=16, col=3, cex=5)#
+points(div3,-0.5, pch=16, col=4, cex=5)#
+#
+text(div1,   0, label=expression(i[1]), col="white", cex=1.5, adj=0.5)#
+text(div2, 0.5, label=expression(i[2]), col="white", cex=1.5, adj=0.5)#
+text(div3,-0.5, label=expression(i[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)#
+text(l, 0.25, label=expression(t[2]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.25, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.75, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+#
+text(div1,-1,label=expression(s[1]),col=1,cex=1.3,adj=0.5)#
+text(div2,-1,label=expression(s[2]),col=1,cex=1.3,adj=0.5)#
+text(div3,-1,label=expression(s[3]),col=1,cex=1.3,adj=0.5)#
+dev.off()
+par(mfrow=c(1,2), mar=c(4,2,1,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,-2,label=expression(s[1]),col=1,cex=1.3,adj=0.5)#
+text(div2,-2,label=expression(s[2]),col=1,cex=1.3,adj=0.5)#
+text(div3,-2,label=expression(s[3]),col=1,cex=1.3,adj=0.5)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="s",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)
+points(div1, 0.0, pch=16, col=2, cex=2)#
+points(div2, 0.5, pch=16, col=3, cex=2)#
+points(div3,-0.5, pch=16, col=4, cex=2)
+points(l, 0.75,pch=15,col=3,cex=5)#
+points(l, 0.25,pch=15,col=1,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)
+points(l, 0.75,pch=15,col=1,cex=5)#
+points(l, 0.25,pch=15,col=3,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)#
+text(l, 0.25, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.25, label=expression(t[2]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.75, label=expression(t[4]), col="white", cex=1.5, adj=0.5)
+text(div1,-1,label=expression(s[1]),col=1,cex=1.3,adj=0.5)#
+text(div2,-1,label=expression(s[2]),col=1,cex=1.3,adj=0.5)#
+text(div3,-1,label=expression(s[3]),col=1,cex=1.3,adj=0.5)
+par(mfrow=c(1,2), mar=c(4,2,1,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,-2,label=expression(s[1]),col=1,cex=1.3,adj=0.5)#
+text(div2,-2,label=expression(s[2]),col=1,cex=1.3,adj=0.5)#
+text(div3,-2,label=expression(s[3]),col=1,cex=1.3,adj=0.5)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)#
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="s",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=2)#
+points(div2, 0.5, pch=16, col=3, cex=2)#
+points(div3,-0.5, pch=16, col=4, cex=2)#
+#
+#text(div1,   0, label=expression(i[1]), col="white", cex=1.5, adj=0.5)#
+#text(div2, 0.5, label=expression(i[2]), col="white", cex=1.5, adj=0.5)#
+#text(div3,-0.5, label=expression(i[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=1,cex=5)#
+points(l, 0.25,pch=15,col=3,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)#
+text(l, 0.25, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.25, label=expression(t[2]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.75, label=expression(t[4]), col="white", cex=1.5, adj=0.5)#
+#
+text(div1,-1,label=expression(s[1]),col=1,cex=1.3,adj=0.5)#
+text(div2,-1,label=expression(s[2]),col=1,cex=1.3,adj=0.5)#
+text(div3,-1,label=expression(s[3]),col=1,cex=1.3,adj=0.5)
+pdf("diffusiontree.pdf",width=10,height=4)#
+par(mfrow=c(1,2), mar=c(4,2,1,2), oma=c(1,1,1,1), xpd=TRUE)#
+off=10#
+plot(x1, type="l", col=1, lwd=1.5, xlim=c(0,l+off), ylim=c(-2,4), axes=FALSE, xlab="s", ylab="")#
+lines(div1:l, x2[div1:l], col=2, lwd=1.5)#
+lines(div2:l, x3[div2:l], col=3, lwd=1.5)#
+lines(div3:l, x4[div3:l], col=4, lwd=1.5)#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+axis(2)#
+#
+points(div1,x2[div1],pch=20,col=2,cex=2)#
+points(div2,x3[div2],pch=20,col=3,cex=2)#
+points(div3,x4[div3],pch=20,col=4,cex=2)#
+#
+text(div1,-2,label=expression(s[1]),col=1,cex=1.3,adj=0.5)#
+text(div2,-2,label=expression(s[2]),col=1,cex=1.3,adj=0.5)#
+text(div3,-2,label=expression(s[3]),col=1,cex=1.3,adj=0.5)#
+text(l+1,x1[l],label=expression(t[1]),col=1,cex=1.5,pos=4)#
+text(l+1,x2[l],label=expression(t[2]),col=2,cex=1.5,pos=4)#
+text(l+1,x3[l],label=expression(t[3]),col=3,cex=1.5,pos=4)#
+text(l+1,x4[l],label=expression(t[4]),col=4,cex=1.5,pos=4)#
+plot(c(0,div1), c(0,0), type="l", lwd=2.5, xlim=c(0,l+off), axes=FALSE, xlab="s",ylab="")#
+lines(c(div1,div2),c(0,0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div1,div3),c(0,-0.5),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div2,l),c(0.5,0.25),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.75),type="l", lwd=2.5, xlim=c(0,l))#
+lines(c(div3,l),c(-0.5,-0.25),type="l", lwd=2.5, xlim=c(0,l))#
+axis(1,at=c(0,div1,div2,div3,l), label=c(0,div1,div2,div3,l)/l)#
+#
+points(div1, 0.0, pch=16, col=2, cex=2)#
+points(div2, 0.5, pch=16, col=3, cex=2)#
+points(div3,-0.5, pch=16, col=4, cex=2)#
+#
+#text(div1,   0, label=expression(i[1]), col="white", cex=1.5, adj=0.5)#
+#text(div2, 0.5, label=expression(i[2]), col="white", cex=1.5, adj=0.5)#
+#text(div3,-0.5, label=expression(i[3]), col="white", cex=1.5, adj=0.5)#
+points(l, 0.75,pch=15,col=1,cex=5)#
+points(l, 0.25,pch=15,col=3,cex=5)#
+points(l,-0.25,pch=15,col=2,cex=5)#
+points(l,-0.75,pch=15,col=4,cex=5)#
+#
+text(l, 0.75, label=expression(t[1]), col="white", cex=1.5, adj=0.5)#
+text(l, 0.25, label=expression(t[3]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.25, label=expression(t[2]), col="white", cex=1.5, adj=0.5)#
+text(l,-0.75, label=expression(t[4]), col="white", cex=1.5, adj=0.5)#
+#
+text(div1,-1,label=expression(s[1]),col=1,cex=1.3,adj=0.5)#
+text(div2,-1,label=expression(s[2]),col=1,cex=1.3,adj=0.5)#
+text(div3,-1,label=expression(s[3]),col=1,cex=1.3,adj=0.5)#
+dev.off()
+dev.off()
+rm(list=ls())
+rm(list=ls())
+setwd("/Users/heecheolchung/Dropbox/Research/TAMU/graphical/p50/")
+funcPath   <- "/Users/heecheolchung/Dropbox/Research/TAMU/graphical/functions/"
+resultPath <- "/Users/heecheolchung/Dropbox/Research/TAMU/graphical/p50/"
