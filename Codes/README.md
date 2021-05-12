@@ -1,6 +1,6 @@
 # PhyloBCG
 
-This folder contains R codes that produce the simulation and real data analysis results presented in the paper *"Phylogenetically informed Bayesian truncated copula graphical models for microbial association networks"* by Hee Cheol Chung, Irina Gaynanova and Yang Ni.[arXiv link](https://github.com/irinagain/SING)
+This folder contains R codes that produce the simulation and real data analysis results presented in the paper *"Phylogenetically informed Bayesian truncated copula graphical models for microbial association networks"* by Hee Cheol Chung, Irina Gaynanova and Yang Ni. [arXiv link](https://arxiv.org/pdf/2105.05082.pdf)
 
 ## Main codes
 
