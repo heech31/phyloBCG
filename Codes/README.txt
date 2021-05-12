@@ -26,15 +26,15 @@ This folder contains R codes that produce the simulation and real data analysis 
 
 10. functions/treeGibbs.R: for the gibbs sampling algorithm for PhyloBCG
 
-10. fileGen_sim_ada: Shell script, which generates "Main codes" for replicated data sets.
+10. fileGen_sim_ada.sh: Shell script, which generates "Main codes" for replicated data sets.
 
 The following directories need to exist and accessible by "Main codes":
 
 
 
 To run :
-1. Generate data by running 
-2. Generate R codes and shell scripts using codeGen.sh
+1. Set correct path names
+2. Generate R codes and shell scripts using fileGen_sim_ada.sh
 3. Submit **_sub.sh files to accessible LSF cluster.
 
 
