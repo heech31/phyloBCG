@@ -2,7 +2,7 @@
 
 This folder contains R codes that produce the simulation and real data analysis results presented in the paper *"Phylogenetically informed Bayesian truncated copula graphical models for microbial association networks"* by Hee Cheol Chung, Irina Gaynanova and Yang Ni. [arXiv link](https://arxiv.org/pdf/2105.05082.pdf)
 
-## Main codes
+## Main functions
 
 **functions/AlbertChib_exp.R** - Albert-Chip data augmentation for Dist model
 
@@ -24,7 +24,22 @@ This folder contains R codes that produce the simulation and real data analysis 
 
 **functions/treeGibbs.R** - for the gibbs sampling algorithm for PhyloBCG
 
-**fileGen_sim_ada.sh** - Shell script, which generates "Main codes" for replicated data sets.
+
+## Simulation codes
+
+**simulation/m1.R** - Base simulation code for Oracle
+
+**simulation/m2.R** - Base simulation code for Dist
+
+**simulation/m3.R** - Base simulation code for PhyloBCG
+
+**simulation/m4.R** - Base simulation code for Spiec-Easi
+
+**simulation/m5.R** - Base simulation code for SPRING
+
+**simulation/fileGen_sim_ada.sh** - Shell script, which generates simulation codes for each setting using a base simulation code
+
+**simulation/subjob*.sh** - Base shell script that submits m*.R to the LSF cluster
 
 
 ## Supporting data
