@@ -14,9 +14,9 @@ library(plyr);
 library(ggplot2);
 library(reshape);
 library(gridExtra)
+library(tmvtnorm)
+library(mvtnorm)
 library(doParallel)
 
 library(SPRING) 
 library(SpiecEasi)
-library(tmvtnorm)
-library(mvtnorm)

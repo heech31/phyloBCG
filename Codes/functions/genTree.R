@@ -1,4 +1,3 @@
-
 library(ape)#install.packages("ape")
 library(phytools)#install.packages("phytools")
 library(phylobase)#install.packages("phylobase")
@@ -10,7 +9,7 @@ library(Matrix)
 
 
 ## Random tree generation for simulation study. 
-##
+
 
 
 genTree <- function(p, K=2, cscale){
@@ -18,10 +17,10 @@ genTree <- function(p, K=2, cscale){
 	## p : The number of terminal nodes (number of variables)
 	## K : The dimension of the latent space
 	## R : Correlation matrix for multi-dimensional Brownian motion
-	## cscale (=sigma2) : Tree scale (height of the tree)
+	## cscale (=sigma^2) : Tree scale (height of the tree)
 
-	mytree <- rcoal(p)#plot(mytree)
-	
+	mytree <- rcoal(p)#Generate tree
+	# Set the tree height = sigma^2
 	mytree$edge.length <- cscale*
 				mytree$edge.length/max( nodeHeights(mytree)[,2] )
 
@@ -48,13 +47,11 @@ genTree <- function(p, K=2, cscale){
 
 	## Remove the initial node (Root) which has zero variance
 	initialNode <- which( colSums( H!=0 ) == 0 )
-
 	H <- H[-initialNode,-initialNode]
 
 
 
-	## Distance between terminal nodes
-	
+	## Distance between terminal nodes (for Dist)
 	dist.terminal.nodes <- matrix(0,p,p)
 	for( i in 1:p){
 		for( j in 1:p){
@@ -66,17 +63,15 @@ genTree <- function(p, K=2, cscale){
 	## Generate latent positions
 	nodes <- t( mvtnorm::rmvnorm(K,rep(0,dim(H)[1]),H) )
 
-
 	## Take latent positions of the terminal nodes
 	terminal <- as.matrix( nodes[1:p,] ) # p x K matrix 
 
 	sim <- tcrossprod( scale(terminal, TRUE, FALSE) ) # Inner-product similarity
-	#sim <- tcrossprod( scale(terminal, FALSE, FALSE) ) # similarity
 
 	# Set names
 	rownames(sim) <- colnames(sim) <- rownames(terminal)
 
-	## True ddge inclusion probabilities (probit)
+	## Obtain the true edge inclusion probabilities
 	edgeProb <- pnorm(sim)
 
 	results <- list(edgeProb = edgeProb, H = H, nodes = nodes, dist.terminal.nodes = dist.terminal.nodes, mytree = mytree )

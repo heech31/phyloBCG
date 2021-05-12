@@ -62,10 +62,7 @@ x50 <- vector("list",nrep)
 for( ii in 1:nrep){
   x50[[ii]] <- synthData_from_ecdf(QMP, mar = 2, SigmaTrue , n=n, seed = NULL, verbose = FALSE)
 }
-print(x50[[2]][1,1:5])
-print(x50[[4]][1,1:5])
-
-
+# Fit SPRING for each 50 replicated data sets
 Rep50 <- foreach( irep = 1:nrep)%dopar%{
 
         x <- x50[[irep]]

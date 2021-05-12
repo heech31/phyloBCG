@@ -6,23 +6,27 @@ README
 
 This folder contains R codes that produce the simulation and real data analysis results presented in the paper "Phylogenetically informed Bayesian truncated copula graphical models for microbial association networks" by Hee Cheol Chung, Irina Gaynanova and Yang Ni.
 
-1. functions/AlbertChib_mrg.R: 
+1. functions/AlbertChib_exp.R: Albert-Chip data augmentation for Dist model
 
-2. functions/conditionalSample.R: 
+2. functions/AlbertChib_mrg.R: Alber-Chip data augmentation for PhyloBCG
 
-3. functions/distGibbs.R: 
+3. functions/conditionalSample.R: Sampling from the truncated normal conditional distribution
 
-4. functions/orclGibbs.R: 
+4. functions/distGibbs.R: for the gibbs sampling algorithm for Dist
 
-5. functions/treeGibbs.R: 
+5. functions/genTree.R: wrapper function random tree generation
 
-6. functions/SSVS.R: 
+6. functions/library.R: call libraries
 
-7. functions/genTree.R:
+7. functions/orclGibbs.R: for the gibbs sampling algorithm for Oracle
 
-8. functions/TreeDataGeneration.R:
+8. functions/SSVS.R: for the gibbs step for SSSL (Wang, 2015)
 
-9. codeGen: Shell script, which generates "Main codes," corresponding to replicated data sets.
+9. functions/TreeDataGeneration.R: random tree generation using the ape package
+
+10. functions/treeGibbs.R: for the gibbs sampling algorithm for PhyloBCG
+
+10. codeGen: Shell script, which generates "Main codes," corresponding to replicated data sets.
 
 The following directories need to exist and accessible by "Main codes":
 

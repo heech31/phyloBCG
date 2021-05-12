@@ -1,4 +1,4 @@
-# sample from conditional distribution (truncated normal)
+# sample from truncated normal conditional distribution
 zsample <- function(x,z,R,delta,below=TRUE){
 	library(tmvtnorm)
 	# n     : Sample size
@@ -7,9 +7,7 @@ zsample <- function(x,z,R,delta,below=TRUE){
 	# R     : p x p Correlation matrix 
 	# delta : p x 1 Truncation threshold for z (given).
   # below : Logical. If TRUE x<c for some c, and x>c, otherwise.
-  # xx = x
-  # jj = 40; x = xx[jj,]; z = zhat_mc[jj,]; R=R_mc; delta=delta_mc
-  #cbind(x,z,delta)
+
 	ind0   <- (x==0) # Flag for 0 observations #sum(ind0)
 	
 	if( sum(ind0) == 0 ){
