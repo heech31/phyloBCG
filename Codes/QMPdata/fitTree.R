@@ -87,26 +87,3 @@ zhat <- matrix( unlist( lapply(eFxx,function(pr) qnorm( ( n/(n+1) )*pr ) ) ), n,
     print(et-bt)
 
     save.image(paste(resultPath,"result.QMPtree.RData",sep=""))
-
-colnames(H)
-colnames(QMP)
-#plot( gibbsSample$v0_gibbs )
-#plot( gibbsSample$sig2_gibbs, type="l" )
-#hist( gibbsSample$sig2_gibbs )    
-# Reduce('+', alply(gibbsSample$pi_gibbs,3) )/nmc
-# Reduce('+', alply(gibbsSample$E_gibbs,3) )/nmc
-# plot( graph_from_adjacency_matrix( 1*(Reduce('+', alply(gibbsSample$E_gibbs,3) )/nmc>0.8) ) )
-# hist(gibbsSample$sig2_gibbs,100,prob=TRUE)
-# acf(gibbsSample$sig2_gibbs[seq(1,30000,by=100)],50)
-
-
-#jj <- 10
-#par(mfrow=c(1,2))
-#hist(gibbsSample$E_gibbs[1,jj,])
-#plot(gibbsSample$pi_gibbs[1,jj,])
-#abline(h=0.5,col=2)
-
-# ss <- 123
-# pnorm( t(scale(gibbsSample$U_gibbs[,,ss],FALSE,FALSE) ) %*% scale(gibbsSample$U_gibbs[,,ss], FALSE,FALSE) )
-# gibbsSample$pi_gibbs[,,ss]
-
