@@ -42,6 +42,17 @@ This folder contains R codes that produce the simulation and real data analysis 
 **simulation/subjob*.sh** - Base shell script that submits m*.R to the LSF cluster
 
 
+
+## Quantitative Microbiome Profiling data (Vandeputte et al., 2017) analysis 
+
+**QMPdata/fitSPIECEASI.R** - Fit Speic-Easi
+
+**QMPdata/fitSPING.R** - Fit SPRING
+
+**QMPdata/fitTree.R** - Fit PhyloBCG
+
+**QMPdata/qmp_TreeRead.R** - Read the phylogenetic tree of 54 genera (tree-newick2.txt)
+
 ## Supporting data
 
 **simulation/QMPtree.RData**
