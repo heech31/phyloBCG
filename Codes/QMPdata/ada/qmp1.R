@@ -1,8 +1,11 @@
 rm(list=ls())
-setwd("/Users/heecheolchung/Dropbox/Research/TAMU/graphical/QMPdata/")
-funcPath   <- "/Users/heecheolchung/Dropbox/Research/TAMU/graphical/functions/"
-resultPath <- "/Users/heecheolchung/Dropbox/Research/TAMU/graphical/QMPdata/results/"
+#setwd("/Users/heecheolchung/Dropbox/Research/TAMU/graphical/QMPdata/")
+#funcPath   <- "/Users/heecheolchung/Dropbox/Research/TAMU/graphical/functions/"
+#resultPath <- "/Users/heecheolchung/Dropbox/Research/TAMU/graphical/QMPdata/results/"
 
+setwd("//general/home/hcchung/graphical/adaQMP/")
+funcPath   <- "/general/home/hcchung/graphical/functions/"
+resultPath <- "/general/home/hcchung/graphical/adaQMP/results/"
 
 library(boot); library(tmvtnorm); #install.packages("tmvtnorm")
 library(huge) #install.packages("huge")
@@ -69,44 +72,21 @@ zhat <- matrix( unlist( lapply(eFxx,function(pr) qnorm( ( n/(n+1) )*pr ) ) ), n,
 
 		pijk_mc <- matrix( 2 / (p - 1),p,p) # Initial edge inclusion probabilities
 
-		sig2_mc <- 12 # Initial tree scale
-		
+        sig2_mc <- 5 # Initial tree scale
+
 		U_mc <- rmvnorm(2, rep(0,p), sig2_mc*H_t ) # Initial latent positions
-	
 
 		
-		burnin = 50000
-		nmc = 50000
-		
+        burnin = 25000
+        nmc = 100000
+
 		bt <- Sys.time()
-		set.seed(77845,kind = "Mersenne-Twister" ,sample.kind = "Rejection" )
+		set.seed(77843,kind = "Mersenne-Twister" ,sample.kind = "Rejection" )
 		seed.state <- .Random.seed
 		gibbsSample <- treeGibbs(x, delta_mc, zhat_mc, R_mc, v0_mc, tau_mc, pijk_mc, U_mc, sig2_mc, 
-		                         hyperparameters, burnin, nmc, verbose=FALSE, sample.z=TRUE, thin=10)
+		                         hyperparameters, burnin, nmc, verbose=FALSE, sample.z=TRUE,thin=10)
 		et <- Sys.time()
     print(et-bt)
 
-    save.image(paste(resultPath,"result.QMPtree.RData",sep=""))
-
-colnames(H)
-colnames(QMP)
-#plot( gibbsSample$v0_gibbs )
-#plot( gibbsSample$sig2_gibbs, type="l" )
-#hist( gibbsSample$sig2_gibbs )    
-# Reduce('+', alply(gibbsSample$pi_gibbs,3) )/nmc
-# Reduce('+', alply(gibbsSample$E_gibbs,3) )/nmc
-# plot( graph_from_adjacency_matrix( 1*(Reduce('+', alply(gibbsSample$E_gibbs,3) )/nmc>0.8) ) )
-# hist(gibbsSample$sig2_gibbs,100,prob=TRUE)
-# acf(gibbsSample$sig2_gibbs[seq(1,30000,by=100)],50)
-
-
-#jj <- 10
-#par(mfrow=c(1,2))
-#hist(gibbsSample$E_gibbs[1,jj,])
-#plot(gibbsSample$pi_gibbs[1,jj,])
-#abline(h=0.5,col=2)
-
-# ss <- 123
-# pnorm( t(scale(gibbsSample$U_gibbs[,,ss],FALSE,FALSE) ) %*% scale(gibbsSample$U_gibbs[,,ss], FALSE,FALSE) )
-# gibbsSample$pi_gibbs[,,ss]
-
+    saveRDS(gibbsSample,file=paste(resultPath,"result.QMPchain_1.rds",sep=""))
+print(.Random.seed)

@@ -1,4 +1,6 @@
 # Pruning QMP dataset
+# final dataset is saved in "Analysis/QMP_updated/qmphealthyrank6pruned.rdata".
+
 rm(list=ls())
 
 library(phyloseq)
@@ -55,6 +57,9 @@ QMP <- matrix(NA, nrow = dim(RMP)[1], ncol = dim(RMP)[2])
 for ( i in 1:dim(X)[1] ){
   QMP[i, ] <- RMP[i, ] * cellcount[i]
 }
+
+dim(QMP)
+
 
 
 taxNames <- tax_table( qmphealthy6_only1filt ) # Save taxonomic rank
