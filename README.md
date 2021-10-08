@@ -1,9 +1,13 @@
-README
+PhyloBCG
 ================
-Hee Cheol Chung
-10/8/2021
 
-## R Markdown
+This folder contains R codes that produce the simulation and real data
+analysis results presented in the paper “Phylogenetically informed
+Bayesian truncated copula graphical models for microbial association
+networks” by Hee Cheol Chung, Irina Gaynanova and Yang Ni. [arXiv
+link](https://arxiv.org/pdf/2105.05082.pdf)
+
+## Simple example
 
 This is an R Markdown document. Markdown is a simple formatting syntax
 for authoring HTML, PDF, and MS Word documents. For more details on
