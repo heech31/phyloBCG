@@ -1,6 +1,6 @@
 ---
-title: "Synthetic data generation"
-output: html_document
+title: "Data generation"
+output: rmarkdown::github_document
 ---
 
 ```{r setup, include=FALSE}
