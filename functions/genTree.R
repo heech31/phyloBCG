@@ -2,16 +2,16 @@
 ## a random tree, inclusion probability and graph
 ## where the distance to the root of the terminal nodes are equivalent
 
-genTree <- function(p, K=2, cscale){
+genTree <- function(p, K=2, tree.scale){
 	
 	## p : The number of terminal nodes (number of variables)
 	## K : The dimension of the latent space
 	## R : Correlation matrix for multi-dimensional Brownian motion
-	## cscale (=sigma2) : Tree scale (height of the tree)
+	## tree.scale (=sigma2) : Tree scale (height of the tree)
 
 	mytree <- rcoal(p)#plot(mytree)
 	
-	mytree$edge.length <- cscale*
+	mytree$edge.length <- tree.scale*
 				mytree$edge.length/max( nodeHeights(mytree)[,2] )
 
 	## Most common ancestors and node heights

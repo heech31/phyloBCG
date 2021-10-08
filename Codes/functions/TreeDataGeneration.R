@@ -4,7 +4,7 @@
 # Load tree generation function
 # To run the following variables need to be previsouly defined
 #   p: Number of variables
-#   cscale: tree scale cscale=3
+#   tree.scale: tree scale tree.scale=3
 # genTree should be loaded by source(paste(funcPath,"genTree.R",sep="") )
 
 # delta <- rnorm(p,0,sqrt(0.1)) # observation level thresholds
@@ -13,7 +13,7 @@
 # Ip    <- diag(p)
 
 
-mytree <- genTree(p, K=2, cscale=cscale)
+mytree <- genTree(p, K=2, tree.scale=tree.scale)
 
 
 H <- mytree$H # Tree covariance matrix including internal nodes

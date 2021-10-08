@@ -11,11 +11,12 @@
 # Although this is redundant for simulations,
 # do not remove. Removing this line will change
 # generated graphs and correlation matrices
+#
 redundant <- rnorm(p,0,sqrt(0.1))
 ##################################################
 
 
-mytree <- genTree(p, K=2, cscale=cscale)
+mytree <- genTree(p, K=2, tree.scale=tree.scale)
 
 # Tree covariance matrix including internal nodes
 H <- mytree$H

@@ -12,16 +12,16 @@ library(Matrix)
 
 
 
-genTree <- function(p, K=2, cscale){
+genTree <- function(p, K=2, tree.scale){
 	
 	## p : The number of terminal nodes (number of variables)
 	## K : The dimension of the latent space
 	## R : Correlation matrix for multi-dimensional Brownian motion
-	## cscale (=sigma^2) : Tree scale (height of the tree)
+	## tree.scale (=sigma^2) : Tree scale (height of the tree)
 
 	mytree <- rcoal(p)#Generate tree
 	# Set the tree height = sigma^2
-	mytree$edge.length <- cscale*
+	mytree$edge.length <- tree.scale*
 				mytree$edge.length/max( nodeHeights(mytree)[,2] )
 
   ## Most recent common ancestors and node heights
