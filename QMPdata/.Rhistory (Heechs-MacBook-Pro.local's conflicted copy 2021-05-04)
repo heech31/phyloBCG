@@ -1,0 +1,401 @@
+library(Rcpp)
+library(RcppArmadillo)
+getwd()
+sourceCpp("/Users/heecheolchung/Dropbox/Research/TAMU/Irina'sCompClass/firstTry.cpp")
+getwd()
+sourceCpp("/Users/heecheolchung/Dropbox/Research/TAMU/Irina'sCompClass/firstTry.cpp")
+sourceCpp("/Users/heecheolchung/Dropbox/Research/TAMU/Irina'sCompClass/firstTry.cpp")
+library(Rcpp)
+library(RcppArmadillo)
+getwd()
+sourceCpp("/Users/heecheolchung/Dropbox/Research/TAMU/Irina'sCompClass/firstTry.cpp")
+library(microbenchmark)
+vec <- rnorm(200000)
+microbenchmark(
+t(vec) %*% vec,
+inner2(vec, vec) )
+library(Rcpp)
+library(RcppArmadillo)
+getwd()
+sourceCpp("/Users/heecheolchung/Dropbox/Research/TAMU/Irina'sCompClass/firstTry.cpp")
+library(microbenchmark)
+vec <- rnorm(200000)
+microbenchmark(
+t(vec) %*% vec,
+inner2(vec, vec) )
+library(JACA)
+# Example
+set.seed(1)
+# Generate class indicator matrix Z
+n = 100
+Z=matrix(c(rep(1, n),rep(0, 2 * n)), byrow = FALSE, nrow = n)
+for(i in 1:n){
+Z[i, ] = sample(Z[i, ])
+}
+Z
+# Generate input data X_list
+d = 2
+X_list = sapply(1:d, function(i) list(matrix(rnorm(n * 20), n, 20)))
+str(X_list)
+d = 2
+X_list = sapply(1:d, function(i) list(matrix(rnorm(n * 20*i), n, 20*i)))
+str(X_list)
+W = jacaTrain(Z, X_list, lambda = rep(0.05, 2), verbose = FALSE, alpha= 0.5, rho = 0.2)
+# Show the number of non-zero rows of each matrix of discriminant vectors
+sapply(W, function(x) sum(rowSums(x) != 0))
+W
+source('~/Dropbox/Research/TAMU/HorseData/JACA/Jaca.R')
+source('~/Dropbox/Research/TAMU/HorseData/JACA/Jaca.R')
+source('~/Dropbox/Research/TAMU/HorseData/JACA/Jaca.R')
+source('~/Dropbox/Research/TAMU/HorseData/JACA/Jaca.R')
+source('~/Dropbox/Research/TAMU/HorseData/JACA/Jaca.R')
+t = seq(0,10,l=5000)
+ts <- 5000
+ngrid <- 5000
+ngrid <- 5000
+t  <-  seq(0,10,l=ngrid)
+xt <- rep(0,ngrid)
+for( ii in 1:ngrid){
+xt[ii] <-  sin(t*0.2)*rnorm(1)
+}
+warnings()
+for( ii in 1:ngrid){
+xt[ii] <-  sin(t[ii]*0.2)*rnorm(1)
+}
+plot(xt)
+for( ii in 1:ngrid){
+xt[ii] <-  sin(t[ii])*rnorm(1)
+}
+plot(xt)
+hist(xt)
+885+885*0.1
+995+885
+995+885+120
+library(help = ape)
+library(help = SPRING)
+iinstall.packages("SPRING")
+install.packages("SPRING")
+# install.packages("devtools")
+devtools::install_github("GraceYoon/SPRING")
+packageVersion("SPRING")
+packageVersion("ape")
+citation(package="ape")
+citation(package="SPRING")
+citation(package="SpeicEasi")
+install.packages("SpiecEasi")
+install.packages("spiec.easi")
+library(devtools)
+install_github("zdk123/SpiecEasi")
+library(SpiecEasi)
+citation(package="SpiecEasi")
+citation(package="spe")
+citation(package="ape")
+library(tmvtnorm);
+rm(list=ls())
+setwd("/Users/heecheolchung/Dropbox/Research/TAMU/graphical/p50/")
+funcPath   <- "/Users/heecheolchung/Dropbox/Research/TAMU/graphical/functions/"
+resultPath <- "/Users/heecheolchung/Dropbox/Research/TAMU/graphical/p50/"
+#funcPath   <- "/general/home/hcchung/graphical/p50/functions/"
+#resultPath <- "/general/home/hcchung/graphical/p50/results/"
+library(boot); library(tmvtnorm);
+library(huge) #install.packages("gmm")
+library(igraph) #install.packages("igraph")
+library(BDgraph) #install.packages("BDgraph")
+library(plyr);library(ggplot2);library(reshape);library(gridExtra)
+library(phylobase)#install.packages("phylobase")
+#install.packages("ppcor")
+#install.packages("phyloseq")
+rtmvnorm
+library(tmvtnorm)
+source(paste(funcPath,"genTree.R",sep=""))
+source(paste(funcPath,"genTree.R",sep=""))
+set.seed(77843)
+ndata <- 10
+seeds <- sample(1000:9999,ndata)
+cscale <- 3
+n <- 500 # Sample size
+p <- 50  # Data dimension
+K <- 2   # Latent space dimension
+iseed <- 9
+clusteringCoeff <- rep(0,10)
+#iseed <- 1
+for( iseed in 1:10){
+#pdf( paste("graphs",iseed,".pdf",sep=""), width = 21, height = 7 )
+set.seed( seeds[iseed] )
+source(paste(funcPath,"TreeDataGeneration.R",sep=""))
+#dev.off()
+clusteringCoeff[iseed] <- transitivity(grphTrue,type="undirected")
+}
+transitivity(grphTrue,type="undirected")
+A <- as_adjacency_matrix(grphTrue)
+num <- 0
+for( ii in 1:50){
+for(jj in 1:50){
+for(kk in 1:50){
+num <-  num + A[ii,jj]*A[jj,kk]*A[kk,ii]
+}
+}
+print(ii)
+}
+num/sum( rowSums(A)*(rowSums(A)-1) )
+transitivity(grphTrue,type="undirected")
+plot(grphTrue)
+clusteringCoeff
+set.seed( seeds[iseed] )
+source(paste(funcPath,"TreeDataGeneration.R",sep=""))
+rm(list=ls())
+setwd("/Users/heecheolchung/Dropbox/Research/TAMU/graphical/p50cdf/")
+funcPath   <- "/Users/heecheolchung/Dropbox/Research/TAMU/graphical/functions/"
+resultPath <- "/Users/heecheolchung/Dropbox/Research/TAMU/graphical/p50cdf/figures/"
+#setwd("/general/home/hcchung/graphical/p50cdf/")
+#funcPath   <- "/general/home/hcchung/graphical/functions/"
+#resultPath <- "/general/home/hcchung/graphical/p50cdf/results/"
+##Load libraries
+source(paste(funcPath,"libraries.R",sep=""))
+ncores <- 10 # Number of cores used for parallel Gibbs sampling for 50 replicated datasets
+registerDoParallel(ncores)
+source(paste(funcPath,"genTree.R",sep=""))
+source(paste(funcPath,"conditionalSample.R",sep=""))
+source(paste(funcPath,"SSVS.R",sep=""))
+source(paste(funcPath,"AlbertChib_exp.R",sep=""))
+source(paste(funcPath,"distGibbs.R",sep=""))
+cscale <- 3 # Tree scale parameter
+set.seed(77843,kind = "Mersenne-Twister" ,sample.kind = "Rejection" )
+.Random.seed[1:10]# [1]       10403         624  -178731297 -1055943788  -141839995    73787522 -1695823333  -768657760  -332079583 -1279357586
+ndata <- 10
+seeds <- sample(19999:29999,ndata)#print(seeds)# [1] 23804 25990 23816 27180 25273 26819 20145 26898 25655 22684
+## Load QMP data for synthetic data generation
+load("QMPtree.RData")
+dim(QMP) #There are 106 subjects and 54 genera
+n <- dim(QMP)[1] # Sample size
+p <- 50  # Data dimension
+K <- 2   # Latent space dimension
+if (!requireNamespace("BiocManager", quietly = TRUE))
+install.packages("BiocManager")
+BiocManager::install("phyloseq")
+rm(list=ls())
+setwd("/Users/heecheolchung/Dropbox/Research/TAMU/graphical/p50cdf/")
+funcPath   <- "/Users/heecheolchung/Dropbox/Research/TAMU/graphical/functions/"
+resultPath <- "/Users/heecheolchung/Dropbox/Research/TAMU/graphical/p50cdf/figures/"
+#setwd("/general/home/hcchung/graphical/p50cdf/")
+#funcPath   <- "/general/home/hcchung/graphical/functions/"
+#resultPath <- "/general/home/hcchung/graphical/p50cdf/results/"
+##Load libraries
+source(paste(funcPath,"libraries.R",sep=""))
+ncores <- 10 # Number of cores used for parallel Gibbs sampling for 50 replicated datasets
+registerDoParallel(ncores)
+source(paste(funcPath,"genTree.R",sep=""))
+source(paste(funcPath,"conditionalSample.R",sep=""))
+source(paste(funcPath,"SSVS.R",sep=""))
+source(paste(funcPath,"AlbertChib_exp.R",sep=""))
+source(paste(funcPath,"distGibbs.R",sep=""))
+cscale <- 3 # Tree scale parameter
+set.seed(77843,kind = "Mersenne-Twister" ,sample.kind = "Rejection" )
+.Random.seed[1:10]# [1]       10403         624  -178731297 -1055943788  -141839995    73787522 -1695823333  -768657760  -332079583 -1279357586
+ndata <- 10
+seeds <- sample(19999:29999,ndata)#print(seeds)# [1] 23804 25990 23816 27180 25273 26819 20145 26898 25655 22684
+## Load QMP data for synthetic data generation
+load("QMPtree.RData")
+dim(QMP) #There are 106 subjects and 54 genera
+n <- dim(QMP)[1] # Sample size
+p <- 50  # Data dimension
+K <- 2   # Latent space dimension
+read.csv(file="clusteringCoefficient.csv",row.names =FALSE)
+read.csv(file="clusteringCoefficient.csv")
+clusterCoefs
+as.vector(read.csv(file="clusteringCoefficient.csv"))
+unlist(read.csv(file="clusteringCoefficient.csv"))
+clusterCoefs <- unlist(read.csv(file="clusteringCoefficient.csv"))
+order(clusterCoefs)
+set.seed( seeds[iseed], kind = "Mersenne-Twister" ,sample.kind = "Rejection" )
+source(paste(funcPath,"TreeDataGeneration.R",sep=""))
+grph <- graph_from_adjacency_matrix( Wtrue, mode="undirected")
+clusterCoefs[iseed] <- round( transitivity(grph,type="undirected"), 4)
+par(mfrow=c(1,2))
+plot(grph,main=paste("Clustering coefficient: ", round(clusterCoefs[iseed],3), sep=""))#,layout=layout_with_kk )
+plot(mytree$mytree)
+iseed=1
+par(mfrow=c(1,2))
+plot(grph,main=paste("Clustering coefficient: ", round(clusterCoefs[iseed],3), sep=""))#,layout=layout_with_kk )
+plot(mytree$mytree)
+tree_order <- order(clusterCoefs)
+tree_order
+set_count = 0
+par(mfrow=c(1,2))
+plot(mytree$mytree,main=paste("Tree",set_count,sep=""))
+plot(grph,main=paste("Clustering coefficient: ", round(clusterCoefs[iseed],3), sep=""))#,layout=layout_with_kk )
+set_count = 0
+for( iseed in tree_order){
+set_count = set_count + 1
+set.seed( seeds[iseed], kind = "Mersenne-Twister" ,sample.kind = "Rejection" )
+source(paste(funcPath,"TreeDataGeneration.R",sep=""))
+grph <- graph_from_adjacency_matrix( Wtrue, mode="undirected")
+clusterCoefs[iseed] <- round( transitivity(grph,type="undirected"), 4)
+pdf(paste(resultPath,"graph_trees_",clusterCoefs[iseed],".pdf",sep=""), width=16,height=8)
+par(mfrow=c(1,2))
+plot(mytree$mytree,main=paste("Tree",set_count,sep=""))
+plot(grph,main=paste("Clustering coefficient: ", round(clusterCoefs[iseed],3), sep=""))#,layout=layout_with_kk )
+dev.off()
+# pdf(paste(resultPath,"graph_",clusterCoefs[iseed],".pdf",sep=""), width=16,height=8)
+# par(mfrow=c(1,2))
+#   plot(grph,main=paste("Random seed: ",seeds[iseed], ", " , iseed, "th", sep=""))#,layout=layout_with_kk )
+#   plot(mytree$mytree)
+# dev.off()
+# #save.image(paste(resultPath,"QMPtreeGraph",iseed,".RData",sep=""))
+#print(max(SigmaTrue[upper.tri(SigmaTrue)]))
+#print(eigen(SigmaTrue)$values) #Covarinace matrix eigenvalues
+}
+x = rbinom(100,1,0.4)
+y = rbinom(100,1,0.4)
+#y = -x
+cor(x,y)
+t <- sum(x==1)
+f <- sum(x==0)
+TP <- sum(y[x==1]==1)
+FN <- sum(y[x==1]==0)
+FP <- sum(y[x==0]==1)
+TN <- sum(y[x==0]==0)
+t - TP == FN
+f - TN == FP
+TPR <- TP/t
+FNR <- FN/t
+TPR+FNR
+TNR <- TN/f
+FPR <- FP/f
+TNR+FPR
+num <- (TP*TN - FP*FN)
+denom <- sqrt((TP+FP)*(TP+FN)*(TN+FP)*(TN+FN) )
+num/denom
+cor(x,y)
+TPR <- TP/sum(y)
+FNR <- 1-TPR
+TPR+FNR
+TNR <- TN/sum(1-y)
+FPR <- 1-TNR
+TNR+FPR
+num <- (TP*TN - FP*FN)
+denom <- sqrt((TP+FP)*(TP+FN)*(TN+FP)*(TN+FN) )
+num/denom
+cor(x,y)
+rm(list=ls())
+setwd("/Users/heecheolchung/Dropbox/Research/TAMU/graphical/QMPdata/")
+funcPath   <- "/Users/heecheolchung/Dropbox/Research/TAMU/graphical/functions/"
+resultsPath <- "/Users/heecheolchung/Dropbox/Research/TAMU/graphical/QMPdata/ada/adaQMP/"
+figPath    <- "/Users/heecheolchung/Dropbox/Research/TAMU/graphical/QMPdata/figures/"
+library(boot); library(tmvtnorm); library(coda)
+library(huge) #install.packages("huge")
+library(igraph) #install.packages("igraph")
+library(BDgraph) #install.packages("BDgraph")
+library(plyr);library(ggplot2);library(reshape);library(gridExtra)
+gg_color_hue <- function(n) {
+hues = seq(15, 375, length = n + 1)
+hcl(h = hues, l = 65, c = 100)[1:n]
+}
+cols <- gg_color_hue(20)
+install.packages("corpcor")
+library(corpcor) #install.packages("corpcor")
+load('~/Dropbox/Research/TAMU/graphical/QMPdata/QMPtree.RData')
+x <- QMP
+likelihood <- function(z,R){
+np <- dim(z)
+n <- np[1]
+p <- np[2]
+log.likes <- rep(0,n)
+for(ii in 1:n){
+log.likes[ii] <- dmvnorm(z[ii,],mean=rep(0,p), sigma=R, log=TRUE)
+}
+log.lik <- sum(log.likes)
+list(log.lik=log.lik, log.likes=log.likes)
+}
+## Load MCMC sample of size 30,000
+#load(paste(resultPath,"result.QMPtree30000.RData",sep="") )
+#load(paste(resultPath,"result.QMPtree_1e-3.RData",sep="") )
+nmc <- 10000
+p   <- 54
+nchain <- 4
+nthin   <- 4
+thinInd <-  nthin*(1:(nmc/nthin) )
+ngibbs  <- length( nthin*(1:(nmc/nthin)))
+lp5 <- matrix(0,nchain,ngibbs)
+pi_gibbs <- array(0,dim=c(p,p,ngibbs*nchain))
+C_gibbs  <- array(0,dim=c(p,p,ngibbs*nchain))
+sig2_gibbs <- rep(0,ngibbs*nchain)
+for(ch in 1:nchain){
+gibbsSample <- readRDS( paste(resultsPath,paste("result.QMPchain_",ch,".rds",sep=""), sep="" ) )
+#str(gibbsSample)
+print(ch)
+lp <- rep(0,ngibbs)
+for(ss in 1:ngibbs){
+lp[ss] <- likelihood(gibbsSample$z_gibbs[,,thinInd[ss]], gibbsSample$R_gibbs[,,thinInd[ss] ] )$log.lik
+if(ss%%2500==0){print(ss)}
+}
+lp5[ch,] <- lp
+pi_gibbs[,,(ch-1)*ngibbs+ 1:ngibbs] <- gibbsSample$pi_gibbs[,,thinInd]
+sig2_gibbs[(ch-1)*ngibbs+ 1:ngibbs] <- gibbsSample$sig2_gibbs[thinInd]
+C_gibbs[,,(ch-1)*ngibbs+ 1:ngibbs] <- gibbsSample$C_gibbs[,,thinInd]
+rm(gibbsSample)
+}
+#matplot(t(lp5[1:4,]),type="l",lty=1)
+# plot( lp5[1,],type="l",lty=1, col=rgb(0.1,0.1,0.1,0.7))
+# lines( lp5[2,],type="l",lty=1,col=rgb(0.8,0.1,0.1,0.5))
+# lines( lp5[3,],type="l",lty=1,col=rgb(0.1,0.8,0.1,0.7))
+# lines( lp5[4,],type="l",lty=1,col=rgb(0.1,0.1,0.8,0.5))
+matplot(t(lp5[1:4,]),type="l",lty=1)
+plot( lp5[1,],type="l",lty=1, col=rgb(0.1,0.1,0.1,0.7))
+lines( lp5[2,],type="l",lty=1,col=rgb(0.8,0.1,0.1,0.5))
+lines( lp5[3,],type="l",lty=1,col=rgb(0.1,0.8,0.1,0.7))
+lines( lp5[4,],type="l",lty=1,col=rgb(0.1,0.1,0.8,0.5))
+getwd()
+plot( lp5[1,],type="l",lty=1, col=rgb(0.1,0.1,0.1,0.7),
+main="Trace plot of", xlab="", ylab="")
+lines( lp5[2,],type="l",lty=1,col=rgb(0.8,0.1,0.1,0.5))
+lines( lp5[3,],type="l",lty=1,col=rgb(0.1,0.8,0.1,0.7))
+lines( lp5[4,],type="l",lty=1,col=rgb(0.1,0.1,0.8,0.5))
+plot( lp5[1,],type="l",lty=1, col=rgb(0.1,0.1,0.1,0.7),
+main="Trace plot of", xlab="", ylab="", ylim=c(-6750,-6350))
+lines( lp5[2,],type="l",lty=1,col=rgb(0.8,0.1,0.1,0.5))
+lines( lp5[3,],type="l",lty=1,col=rgb(0.1,0.8,0.1,0.7))
+lines( lp5[4,],type="l",lty=1,col=rgb(0.1,0.1,0.8,0.5))
+dev.off()
+plot( lp5[1,],type="l",lty=1, col=rgb(0.1,0.1,0.1,0.7),
+main="Trace plot of", xlab="", ylab="", ylim=c(-6750,-6350))
+lines( lp5[2,],type="l",lty=1,col=rgb(0.8,0.1,0.1,0.5))
+lines( lp5[3,],type="l",lty=1,col=rgb(0.1,0.8,0.1,0.7))
+lines( lp5[4,],type="l",lty=1,col=rgb(0.1,0.1,0.8,0.5))
+plot( lp5[1,],type="l",lty=1, col=rgb(0.1,0.1,0.1,0.7),
+main="Trace plot of", xlab="", ylab="", ylim=c(-6750,-6300))
+lines( lp5[2,],type="l",lty=1,col=rgb(0.8,0.1,0.1,0.5))
+lines( lp5[3,],type="l",lty=1,col=rgb(0.1,0.8,0.1,0.7))
+lines( lp5[4,],type="l",lty=1,col=rgb(0.1,0.1,0.8,0.5))
+colors
+cols
+rgb(0.1,0.1,0.1,0.7),
+rgb(0.1,0.1,0.1,0.7)
+tracecol <- c( rgb(0.1,0.1,0.1,0.7), rgb(0.8,0.1,0.1,0.5),
+rgb(0.1,0.8,0.1,0.7), rgb(0.1,0.1,0.8,0.5))
+paste("Chain",1:4)
+legend("topright",paste("Chain",1:4), lty=1,col=tracecl)
+legend("topright",paste("Chain",1:4), lty=1,col=tracecol)
+legend("topright",paste("Chain",1:4), lty=1,col=tracecol, lwd=2)
+pdf("tracePlot4.pdf",width=6,height=4)
+plot( lp5[1,],type="l",lty=1, col=tracecol[1],
+main="Trace plot of", xlab="", ylab="", ylim=c(-6750,-6300))
+lines( lp5[2,],type="l",lty=1,col=tracecol[2])
+lines( lp5[3,],type="l",lty=1,col=tracecol[3])
+lines( lp5[4,],type="l",lty=1,col=tracecol[4])
+legend("topright",paste("Chain",1:4), lty=1,col=tracecol, lwd=2)
+dev.off()
+plot.new()
+par(mfrow=c(1,3))
+hist(sig2_gibbs,50)
+acf( sig2_gibbs )
+plot(sig2_gibbs,type="l",lwd=0.5)
+s2hist <- ggplot(df, aes(x=s2gibbs)) +
+geom_histogram(aes(y=..density..), bins=50, colour="black", fill="white") +
+geom_density(alpha=.2, fill="#FF6666")
+mean(sig2_gibbs)
+df <- data.frame(s2gibbs=sig2_gibbs)
+s2hist <- ggplot(df, aes(x=s2gibbs)) +
+geom_histogram(aes(y=..density..), bins=50, colour="black", fill="white") +
+geom_density(alpha=.2, fill="#FF6666")
+s2hist
