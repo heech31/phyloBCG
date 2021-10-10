@@ -46,7 +46,7 @@ plot(qmptree, type="phylogram")
 nodelabels(qmptree$node.label, cex=0.8, adj=1)
 ```
 
-![](README_QMP_files/figure-gfm/example-1.png)<!-- -->
+![](./README_QMP_files/figure-gfm/example-1.png)<!-- -->
 
 ``` r
 # Tree correlation matrix H
