@@ -9,14 +9,11 @@ link](https://arxiv.org/pdf/2105.05082.pdf)
 
 # Simple example
 
-### Load packages and source functions
+### Load data, packages, and functions
 
 ``` r
 sourcePath <- "./functions/"
-dataPath <- "./data/"
-
-#Load QMP data
-load(paste(dataPath,"QMPtree_for_simulation.RData",sep="") )
+dataPath <- "./QMPdata/"
 
 # Load packages and source functions
 files.sources <-  list.files(path=sourcePath)
@@ -24,33 +21,36 @@ files.sources <- setdiff( files.sources, "TreeDataGeneration.R" )
 extension <- substring(files.sources,nchar(files.sources)-1,nchar(files.sources))
 lets.source <- paste(sourcePath, files.sources[extension==".R"], sep="")
 mapply(source, lets.source) 
+
+
+#Load QMP data (need to be loaded after packages and functions)
+load(paste(dataPath,"QMPtree.RData",sep="") )
 ```
 
-### Generate tree data
+### Summary of QMP data
 
 ``` r
-n <- dim(QMP)[1]  # Sample size
-p <- dim(QMP)[2]  # Dimension
-tree.scale <- 3
-set.seed( 25990, kind = "Mersenne-Twister" ,sample.kind = "Rejection" )
-source(paste(sourcePath,"TreeDataGeneration.R",sep=""))
+# Summary
+t( apply(QMP,2,summary) )
 
-H_t     <- cov2cor(H[1:p,1:p]) # Tree correlation matrix of the terminal nodes
-H_tinv  <- solve(H_t) # Tree precision  matrix of the terminal nodes
+# Sample size and dimension
+(n <- dim(QMP)[1])  # Sample size
+(p <- dim(QMP)[2])  # Dimension
+x <- QMP
 
-# Generate synthetic microbiome data with the correlation matrix "SigmaTrue"
-synthDat <- synthData_from_ecdf_and_z(QMP, mar = 2, SigmaTrue , n=n, seed = NULL, verbose = FALSE)
-x <- synthDat$dat
-z <- synthDat$z
+# Zero-proportions
+colMeans(QMP==0)
 
-
-plot(mytree$mytree)
+# Phylogenetic tree
+plot(qmptree, type="phylogram")
+nodelabels(qmptree$node.label, cex=0.8, adj=1)
 ```
 
 ![](README_QMP_files/figure-gfm/example-1.png)<!-- -->
 
 ``` r
-plot(graph_from_adjacency_matrix( Wtrue, mode="undirected"),layout=layout_with_kk)
+# Tree correlation matrix H
+corrplot(H)
 ```
 
 ![](README_QMP_files/figure-gfm/example-2.png)<!-- -->
@@ -80,6 +80,8 @@ eFx  <- apply(x,2,ecdf)
 eFx  <- lapply(eFx, function(x){  function(y)  ecdf.scale *x(y) })
 eFxx <- Map(function(f,x) do.call(f, list(x)), eFx, alply(x,2)  )
 zhat <- matrix( unlist( lapply(eFxx,function(pr) qnorm( pr ) ) ), n, p)
+H_t <- cov2cor(H)
+H_tinv <- solve(H_t)
 
 ########################################################################
 ########   Initial values for gibbs sampling ###########################
