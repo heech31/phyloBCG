@@ -1,11 +1,13 @@
 PhyloBCG
 ================
 
-This folder contains R codes that produce the simulation and real data
-analysis results presented in the paper “Phylogenetically informed
-Bayesian truncated copula graphical models for microbial association
-networks” by Hee Cheol Chung, Irina Gaynanova and Yang Ni. [arXiv
-link](https://arxiv.org/pdf/2105.05082.pdf)
+PhyloBCG implementation with QMP data ([Vandeputte et al.,
+2017](https://www.nature.com/articles/nature24460)).
+
+Reference: Hee Cheol Chung, Irina Gaynanova and Yang Ni.
+[Phylogenetically informed Bayesian truncated copula graphical models
+for microbial association
+networks](https://arxiv.org/pdf/2105.05082.pdf). *arXiv*
 
 # Simple example
 
