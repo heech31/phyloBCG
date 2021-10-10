@@ -53,7 +53,7 @@ nodelabels(qmptree$node.label, cex=0.8, adj=1)
 corrplot(H)
 ```
 
-![](README_QMP_files/figure-gfm/example-2.png)<!-- -->
+![](../README_QMP_files/figure-gfm/example-2.png)<!-- -->
 
 ### Set hyperparameters
 

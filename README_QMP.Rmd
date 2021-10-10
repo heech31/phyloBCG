@@ -34,7 +34,7 @@ load(paste(dataPath,"QMPtree.RData",sep="") )
 
 
 ### Summary of QMP data
-```{r example, echo=TRUE,  warning=FALSE, message=FALSE, results='hide', fig.height=10, fig.width=12}
+```{r example, echo=TRUE,  warning=FALSE, message=FALSE, results='hide', fig.height=10, fig.width=14}
 # Summary
 t( apply(QMP,2,summary) )
 
