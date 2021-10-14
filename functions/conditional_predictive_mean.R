@@ -1,29 +1,4 @@
 
-quantile.stepcdf <- function(prob, empf, interval, tol = 1e-3, maxiter = 100){
-  ans <- c()
-  # uniroot.all from rootSolve package was the fastest one.
-  sol <- as.numeric(
-          rootSolve::uniroot.all(function(x){empf(x)-prob}, interval = interval, tol = tol, maxiter = maxiter))
-  
-  if( length(sol) != 0 ){
-    # in case quantile function is a step function, added the following step.
-    if (prob <= empf(floor(sol))) {
-      ans <- floor(sol)
-    } else if (prob > empf(floor(sol))) {
-      ans <- ceiling(sol)
-    }
-  }else{
-    ans <- 0
-  }
-  return(ans)
-}
-
-
-
-
-
-
-
 conditional_predictive_mean <- function(eFx, x.new, delta_mc, R_mc, maxbound){
   # eFx   : Scaled empirical cdf (list of length p)
   # x.new : Test observation that is not used for model fitting (vector of length p)

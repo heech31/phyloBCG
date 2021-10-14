@@ -21,6 +21,8 @@ library(tmvtnorm)
 library(mvtnorm)
 library(truncdist)
 library(doRNG)
+library(corrplot)
+#library(TreeTools)
 
 # tmvtnorm::checkSymmetricPositiveDefinite examines
 # positive definiteness of a matrix using determinant, which is incorrect

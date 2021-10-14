@@ -1,4 +1,8 @@
-synthData_from_ecdf_and_z <- function (comm, mar = 2, Sigma, n, seed = 10010, verbose = FALSE) 
+# This function is from SPRING package
+# https://github.com/GraceYoon/SPRING
+# Synthetic microbiome data generation based on reference data
+
+synthData_from_ecdf_and_z <- function (comm, mar = 2, Sigma, n, seed = 10010, verbose = FALSE)
 {
     d <- ncol(comm)
     zratio <- apply(comm, MARGIN = mar, function(x) (sum(x == 
@@ -25,14 +29,4 @@ synthData_from_ecdf_and_z <- function (comm, mar = 2, Sigma, n, seed = 10010, ve
     }
     return(list(dat=dat, z=normd) )
 }
-
-
-
-
-environment( synthData_from_ecdf_and_z ) <- asNamespace("SPRING")
-assignInNamespace( "synthData_from_ecdf", synthData_from_ecdf_and_z, ns="SPRING" )
-
-
-
-
 

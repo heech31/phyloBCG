@@ -4,15 +4,15 @@
 # Load tree generation function
 # To run the following variables need to be previsouly defined
 #   p: Number of variables
-#   cscale: tree scale cscale=3
-# genTree shoudl be loaded by source(paste(funcPath,"genTree.R",sep="") )
+#   tree.scale: tree scale parameter (sigma^2)
+#   genTree should be loaded by source(paste(funcPath,"genTree.R",sep="") )
 
 ##################################################
-# Although this is redundant for simulations,
-# do not remove. Removing this line will change
-# generated graphs and correlation matrices
+# This is redundant for tree generation.
+# Uncomment if you want to reproduce
+# the generated graphs and correlation matrices
 #
-redundant <- rnorm(p,0,sqrt(0.1))
+# redundant <- rnorm(p,0,sqrt(0.1))
 ##################################################
 
 

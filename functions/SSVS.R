@@ -9,7 +9,6 @@ SSVS  = function(S, n, Sig, V0, V1, tau, lambda, pijk) {
   ##   V0:  p x p matrix of the small variance  components;  V0(j,k) = v0 for all j,k , v0 is from the previous step
   ##   V1:  p x p matrix of the large variance  components;  V1(j,k) = h*v0 for all j,k
   ##   tau: p x p matrix of the variance components (spike and slab) corresponding to C(j,k) from the previous stp
-  ##        **NOTE**: tau has the graph information from the previous iteration, i.e., tau(j,k)=v0 if ejk=0 and tau(j,k)=hv0 if ejk=1.
   ##   lambda: Hyperparameter for the diagonal element. Usually set to be 1;
   ##   pijk: p x p matrix of the edge inclusion probabilities from the previous step
 

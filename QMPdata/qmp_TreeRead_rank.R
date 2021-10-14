@@ -374,12 +374,27 @@ dim(QMP)
 ## Get the tree covariance matrix of the terminal nodes
 ########################################################
 library(phytools)#install.packages("phytools")
+library(TreeTools)
+
+tree <- qmptree
+plot(tree)
+nodelabels()
+
+no.split <- c(58,59,60,61,62,63,64,65,68,69,74,75,76,77,79,80,84,86,
+              90,94,95,92,98,100,102,104,105,108, 109,110,112,114,115,
+              117,118,119,120,121,122,123,124,125,126,127,128,129,130)
+
+tree.collapsed <- CollapseNode(tree, no.split)
+plot( tree.collapsed )
+nodelabels()
+
+qmptree <- tree.collapsed
 
 nodes.heights <- cbind( qmptree$edge[,2], nodeHeights(qmptree)[,2] )
 
 # Least common ancestors of the terminal nodes
 lcas          <- mrca(qmptree,full=FALSE) # full=FALSE calculated only the terminal nodes
-lcas[,1] <- lcas[1,]
+#lcas[,1] <- lcas[1,]
 isSymmetric(lcas)
 
 

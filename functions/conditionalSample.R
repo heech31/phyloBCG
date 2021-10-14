@@ -1,5 +1,5 @@
 # sample from conditional distribution (truncated normal)
-#x = x[ii,];z = zhat_mc[ii,]; R= R_mc; delta= delta_mc;
+# This function samples truncated z conditioning on observed z.
 zsample <- function(x,z,R,delta,below=TRUE){
 	#library(tmvtnorm)
 	# n     : Sample size
@@ -7,11 +7,9 @@ zsample <- function(x,z,R,delta,below=TRUE){
 	# z     : p x 1 Latent level normal vector ( f(z) = x )
 	# R     : p x p Correlation matrix 
 	# delta : p x 1 Truncation threshold for z (given).
-  # below : Logical. If TRUE x<c for some c, and x>c, otherwise.
-  # xx = x
-  # jj = 40; x = xx[jj,]; z = zhat_mc[jj,]; R=R_mc; delta=delta_mc
-  #cbind(x,z,delta)
-	ind0   <- (x==0) # Flag for 0 observations #sum(ind0)
+    # below : Logical. If TRUE x<c for some c, and x>c, otherwise.
+
+    ind0   <- (x==0) # Flag for 0 observations #sum(ind0)
 	
 	if( sum(ind0) == 0 ){
 		warning("No truncation exists")
@@ -49,6 +47,14 @@ zsample <- function(x,z,R,delta,below=TRUE){
 
   zt.new  <- tmvtnorm::rtmvnorm(1, mean=cmu, sigma=cSigma, upper=upper, lower=lower,
 	                        		 algorithm = "gibbs", burn.in.samples=50, thinning= 1 )
+
+  # This is to check if conditional sampling fails or not
+  # That happens when variance is too small and truncation point is far from the mean
+  # For example, N(3,0.01), truncated above at -2, sampling from the truncated normal can be problematic
+  # because the density below -2 is too thin, and rtmvnorm return NA.
+  # The below part is added to monitor if that is happening and when it is happening.
+  # After burn-in iteration, this should not happen.
+  
   if( sum(is.na(zt.new))>0 ){ # If NA occurs
     zt.new  <- tmvtnorm::rtmvnorm(1, mean=cmu, sigma=(cSigma+diag(0.1,p0)), upper=upper, lower=lower,
                                 algorithm = "gibbs", burn.in.samples=50, thinning= 1 )

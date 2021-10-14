@@ -1,11 +1,11 @@
 ##########################################################
 ## Gibbs sampler for the phylogenetic tree model        ##
 ## Author: Hee Cheol Chung                              ##
-## Data: 03/08/2020                                     ##
+## Date: 03/08/2021                                     ##
 ##########################################################
 
-treeGibbs <- function(x, x.new=NULL, delta_mc, zhat_mc, R_mc, v0_mc, tau_mc, pijk_mc, U_mc, sig2_mc,
-                      hyperparameters, burnin, nmc, verbose=FALSE, thin=NULL){
+treeGibbs <- function(x, delta_mc, zhat_mc, R_mc, v0_mc, tau_mc, pijk_mc, U_mc, sig2_mc,
+                      hyperparameters, burnin, nmc, x.new=NULL, verbose=FALSE, thin=NULL){
 ## x: zero-inflated observed data (n x p)
 ## delta_mc : Initial value of Gaussian thresholds (p x 1)
 ## zhat_mc  : Initial value of latent Gaussian data (n x p)
@@ -21,6 +21,8 @@ h      <- hyperparameters$h
 lambda <- hyperparameters$lambda
 IGsig2 <- hyperparameters$IGsig2
 IGv0   <- hyperparameters$IGv0
+H_t    <- hyperparameters$H_t
+H_tinv <- hyperparameters$H_tinv
 
 np <- dim(zhat_mc) # Sample size and dimension
 n <- np[1]; p <- np[2] 
@@ -55,12 +57,10 @@ delta_gibbs <- array(0,dim=c(p,1,nnmc)) # Gaussian thresholds
 U_gibbs     <- array(0,dim=c(K,p,nnmc)) # Latent positions
 sig2_gibbs  <- rep(0,nnmc) # Tree scale parameter
 v0_gibbs    <- rep(0,nnmc) # Spike variance
-tau_update  <- array(0,dim=c(p,p,nnmc))  # Spike or slab variances for omega_jk
-pi_update   <- array(0,dim=c(p,p,nnmc))  # Edge inclusion probability for e_jk
+tau_update  <- array(0,dim=c(p,p,nnmc)) # Spike or slab variances for omega_jk
+pi_update   <- array(0,dim=c(p,p,nnmc)) # Edge inclusion probability for e_jk
 z_gibbs     <- array(0,dim=c(n,p,nnmc)) # Latent positions
-#PDM_gibbs   <- matrix(0, p, nnmc) # Pivotal discrepancy measure
-#log.den_gibbs <- matrix(0,n,nmc) # log.gaussian.densities
-utriFlag <- upper.tri(matrix(NA,p,p)) ## Upper triangular flag
+utriFlag <- upper.tri(matrix(NA,p,p))   # Upper triangular flag
 zsample.fail.count <- integer(length = nnmc)
 count <- 1 # For thinning index
 
@@ -162,16 +162,15 @@ sig2_mc <- 1/rgamma(1, shape = Gshape,  rate = Grate)
 ############################################
 
 simil           <- crossprod(U_mc)
-#rownames(simil) <- colnames( Wtrue )
-#colnames(simil) <- colnames( Wtrue )
 
 # Update edge probabilities
 pijk_mc <- pnorm(simil)
 
-################################################################################################
-############################################
-#### Get x.new[j]|x.new[-j],x           ####
-############################################
+####################################################################
+####################################################################
+#### Sampling from posterior condtional predictive distribution ####
+#### Get x.new[j]|x.new[-j],x                                   ####
+####################################################################
 if( !is.null(x.new) ){
   predict.z.x <- conditional_predictive_mean(eFx, as.vector(x.new), delta_mc, R_mc, maxbound)
   x.new.loo_mc <- predict.z.x$x.new.loo
@@ -180,16 +179,7 @@ if( !is.null(x.new) ){
   x.new.loo_mc <- NA
   z.new.loo_mc <- NA
   }
-################################################################################################
-
-
-################################################################################################
-############################################################
-#### Get p(z_i| sth MCMC sample)  (for PPO and CPO)     ####
-############################################################
-#log.den_mc <- log.gaussian.density(x,zhat_mc,delta_mc,R_mc)
-################################################################################################
-
+####################################################################
 
 
 
@@ -208,9 +198,6 @@ if( gg > burnin){
       z_gibbs[,,gg-burnin]  <- zhat_mc
       x.loo_gibbs[,gg-burnin] <- x.new.loo_mc
       z.loo_gibbs[,gg-burnin] <- z.new.loo_mc
-      #PDM_gibbs[,gg-burnin] <-
-      #  PDM( x = x, z = zhat_mc, R = R_mc, delta = delta_mc)
-      #log.den_gibbs[,gg-burnin] <- log.den_mc
       zsample.fail.count[gg-burnin] <- as.integer(fail.count)
   }else{
   if( (gg-burnin)%%thin == 0){
@@ -226,9 +213,6 @@ if( gg > burnin){
     z_gibbs[,,count]  <- zhat_mc
     x.loo_gibbs[,count] <- x.new.loo_mc
     z.loo_gibbs[,count] <- z.new.loo_mc
-    #PDM_gibbs[,count] <-
-    #  PDM( x = x, z = zhat_mc, R = R_mc, delta = delta_mc, nK = 3, nL = 11 )
-    #log.den_gibbs[,count] <- log.den_mc
     zsample.fail.count[count] <- as.integer(fail.count)
     count <- count + 1
     }
@@ -252,8 +236,6 @@ sig2_gibbs = sig2_gibbs,
 x.loo_gibbs = x.loo_gibbs,
 z.loo_gibbs = z.loo_gibbs,
 z_gibbs = z_gibbs,
-#PDM_gibbs = PDM_gibbs,
-#log.den_gibbs = log.den_gibbs,
 zsample.fail.count = zsample.fail.count
 )
 
