@@ -394,7 +394,6 @@ nodes.heights <- cbind( qmptree$edge[,2], nodeHeights(qmptree)[,2] )
 
 # Least common ancestors of the terminal nodes
 lcas          <- mrca(qmptree,full=FALSE) # full=FALSE calculated only the terminal nodes
-#lcas[,1] <- lcas[1,]
 isSymmetric(lcas)
 
 
