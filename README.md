@@ -114,7 +114,10 @@ sig2_mc <- 1                        # Initial tree scale parameter
 ```
 
 This code will run 110 Gibbs iterations, then return a posterior sample
-of size 100 discarding the first 10 burn-in iterations.
+of size 100 discarding the first 10 burn-in iterations. The number of
+iterations is only meant to make this a small example, in practice we
+recommend using around 10,000 iterations, and checking the convergence
+diagnostics.
 
 ``` r
 burnin <- 10  # Number of burnin-iteration
