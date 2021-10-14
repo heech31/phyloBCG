@@ -17,7 +17,7 @@ Yoon, G., Gaynanova, I., & Müller, C. L. (2019). [Microbial networks in SPRING-
 Vandeputte, D., Kathagen, G., D’hoe, K., Vieira-Silva, S., Valles-Colomer, M., Sabino, J., ... & Raes, J. (2017). [Quantitative microbiome profiling links gut community variation to microbial load.](https://www.nature.com/articles/nature24460) *Nature*, 551(7681), 507-511.
 
 ## To run
-To implement, (1) clone this repository; (2) open ```phyloBCG.Rproj```; (3) load packages and function located in ```./functions``` the folder as follows
+To implement, (1) clone this repository; (2) open ```phyloBCG.Rproj```; (3) load packages and function located in the folder ```./functions``` as follows
 ```{r source0, echo=TRUE,  warning=FALSE, message=FALSE, results='hide'}
 sourcePath <- "./functions/"
 
@@ -31,12 +31,13 @@ mapply(source, lets.source)
 ## Simple example
 This example assumes that you have your own dataset ```x``` and corresponding phylogenetic tree ```mytree```, where ```mytree``` should be an object of ```phylo```
 
-```{r dataload,echo=TRUE,  warning=FALSE, message=FALSE }
+```{r dataload,echo=TRUE,  warning=FALSE, message=TRUE }
 load("./QMPdata/QMPtree.RData")
 x <- QMP
 n <- nrow(x)  # Sample size
 p <- ncol(x)  # Number of microbes
 mytree <- qmptree
+class(mytree)
 ```
 
 

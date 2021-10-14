@@ -26,7 +26,7 @@ load.](https://www.nature.com/articles/nature24460) *Nature*, 551(7681),
 ## To run
 
 To implement, (1) clone this repository; (2) open `phyloBCG.Rproj`; (3)
-load packages and function located in `./functions` the folder as
+load packages and function located in the folder `./functions` as
 follows
 
 ``` r
@@ -51,7 +51,10 @@ x <- QMP
 n <- nrow(x)  # Sample size
 p <- ncol(x)  # Number of microbes
 mytree <- qmptree
+class(mytree)
 ```
+
+    ## [1] "phylo"
 
 Now, set hyperparmeter values. Based on the tree `mytree`, the function
 `getCovfromTree` returns corresponding tree “covariance” matrix.
@@ -119,6 +122,4 @@ nmc    <- 100 # Number of MCMC-sample that will be kept
 
 gibbsSample <- treeGibbs(x, delta_mc, zhat_mc, R_mc, v0_mc, tau_mc, pijk_mc, U_mc, sig2_mc,
                          hyperparameters, burnin, nmc, verbose=FALSE, thin=NULL)
-
-attributes(gibbsSample)
 ```
