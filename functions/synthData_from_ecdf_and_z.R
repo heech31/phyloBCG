@@ -19,7 +19,7 @@ synthData_from_ecdf_and_z <- function (comm, mar = 2, Sigma, n, seed = 10010, ve
         empf <- ecdf(comm[, j])
         ptm <- proc.time()
         for (k in 1:length(nzind)) {
-            dat[nzind[k], j] <- qstepcdf(unif[nzind[k], j], empf, 
+            dat[nzind[k], j] <- SPRING:::qstepcdf(unif[nzind[k], j], empf, 
                 interval = c(0, maxabund[j]))
         }
         if (verbose == TRUE) {
