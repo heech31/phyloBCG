@@ -2,7 +2,7 @@
 sample_post_predictive <- function(eFx, n, n.pred, delta_upper=NULL, R_mc){
   # eFx   : Scaled empirical cdf (list of length p)
   # n     : Sample size that is used for estimating eFx
-  # delta_mc : Current MCMC sample of threshold vector
+  # delta_upper : Gaussian level threshold vector (not MCMC sample)
   # R_mc     : Current MCMC sample of correlation matrix
 
   z.pred  <- mvtnorm::rmvnorm(n.pred, mean=rep(0,ncol(R_mc)), sigma = R_mc )

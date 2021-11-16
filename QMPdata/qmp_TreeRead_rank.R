@@ -13,8 +13,6 @@ load("./QMPdata/qmphealthyrank6pruned.RData")
 qmphealthy6_only1filt
 
 
-
-
 ## Total number of genera = 91
 length(qmphealthy6_only1filt@tax_table[,6])
 ## Number of genera without name = 25
@@ -380,6 +378,7 @@ tree <- qmptree
 plot(tree)
 nodelabels()
 
+# Collapse internal nodes with no split
 no.split <- c(58,59,60,61,62,63,64,65,68,69,74,75,76,77,79,80,84,86,
               90,94,95,92,98,100,102,104,105,108, 109,110,112,114,115,
               117,118,119,120,121,122,123,124,125,126,127,128,129,130)
