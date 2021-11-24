@@ -6,20 +6,6 @@ dataPath <- "./QMPdata/"
 library(phyloseq)
 load("./QMPdata/QMPphy.RData")
 
-
-dim(t(otu_table(qmp_copyadj_taxsum$Rank6)))
-dim(t(otu_table(qmp_copyadj_taxsum$Rank5)))
-dim(t(otu_table(qmp_copyadj_taxsum$Rank4)))
-
-
-Xrank6 <- t(otu_table(qmp_copyadj_taxsum$Rank6))
-dim(Xrank6) # n=135 and p=215
-table(colSums(Xrank6==0))
-
-
-sum(sample_data(qmp_copyadj_taxsum$Rank6)$Health_status == "Healthy") # 106 healthy samples.
-sum(sample_data(qmp_copyadj_taxsum$Rank6)$Health_status == "CD") # 29 unhealthy samples.
-
 ########################################################################
 # Only one pruning step
 # Did not prune the samples whose sequencing depth is less than 10,000 as we did in amgut data.
@@ -60,19 +46,6 @@ dim(QMP)
 
 taxNames <- tax_table( qmphealthy6_only1filt ) # Save taxonomic rank
 save(qmphealthy6_only1filt, X, QMP, RMP, taxNames, file = paste(dataPath,"qmphealthyrank6pruned.RData",sep="") )
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
