@@ -6,7 +6,7 @@ output: rmarkdown::github_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-R codes to implent PhyloBCG and the quantitative microbiome profiling data (Vandeputte et al., 2017) processed by Yoon, Gaynanova and Muller (2019).
+R codes to implement PhyloBCG and the quantitative microbiome profiling data (Vandeputte et al., 2017) processed by Yoon, Gaynanova and Muller (2019).
 
 #### Reference:  
 
